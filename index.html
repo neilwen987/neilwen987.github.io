@@ -142,9 +142,9 @@
 
 
   <tr>
-    <td width="33%" valign="top" align="center">
+    <td width="30%" valign="top" align="center">
         <a href="#">
-        <img src="img/csr.png" alt="sym" width="300" height="200" style="border-radius:15px">
+        <img src="img/csr.png" alt="sym" width="400" height="200" style="border-radius:15px">
         <!-- <video autoplay loop muted playsinline width="300" height="300" style="border-radius:1px">
           <source src="./teaser-thumbnail_sdfusion.mp4" type="video/mp4">
         </video> -->
@@ -157,8 +157,8 @@
 
             <heading>Beyond Matryoshka: Revisiting Sparse Coding for Adaptive Representation</heading></a>
             <br>
-            <b>Tiansheng Wen*</b>,
-              Yifei Wang*,
+            <b>Tiansheng Wen<sup>*</sup></b>,
+             Yifei Wang<sup>*</sup>,
               Zequn Zeng,
               Zhong Peng,
               Yudi Su,
@@ -178,7 +178,22 @@
 
         <p align="justify">
             <i id="CSR_abs">
-              Many large-scale systems rely on high-quality deep representations (embeddings) to facilitate tasks like retrieval, search, and generative modeling. Matryoshka Representation Learning (MRL) recently emerged as a solution for adaptive embedding lengths, but it requires full model retraining and suffers from noticeable performance degradations at short lengths. In this paper, we show that sparse coding offers a compelling alternative for achieving adaptive representation with minimal overhead and higher fidelity. We propose Contrastive Sparse Representation (CSR), a method that sparsifies pre-trained embeddings into a high-dimensional but selectively activated feature space. By leveraging lightweight autoencoding and task-aware contrastive objectives, CSR preserves semantic quality while allowing flexible, cost-effective inference at different sparsity levels. Extensive experiments on image, text, and multimodal benchmarks demonstrate that CSR consistently outperforms MRL in terms of both accuracy and retrieval speed-often by large margins-while also cutting training time to a fraction of that required by MRL. Our results establish sparse coding as a powerful paradigm for adaptive representation learning in real-world applications where efficiency and fidelity are both paramount. </i>
+              Many large-scale systems rely on high-quality deep representations (embeddings) to facilitate tasks like retrieval,
+                search, and generative modeling.
+                Matryoshka Representation Learning (MRL) recently emerged as a solution for adaptive embedding lengths, but it
+                requires full model retraining and suffers from noticeable performance degradations at short lengths.
+                In this paper, we show that sparse coding offers a compelling alternative for achieving adaptive representation
+                with minimal overhead and higher fidelity.
+                We propose Contrastive Sparse Representation (CSR), a method that sparsifies pre-trained embeddings into a
+                high-dimensional but selectively activated feature space.
+                By leveraging lightweight autoencoding and task-aware contrastive objectives, CSR preserves semantic
+                quality while allowing flexible, cost-effective inference at different sparsity levels.
+                Extensive experiments on image, text, and multimodal benchmarks demonstrate that CSR consistently
+                outperforms MRL in terms of both accuracy and retrieval speed-often by large margins-while also cutting
+                training time to a fraction of that required by MRL.
+                Our results establish sparse coding as a powerful paradigm for adaptive representation learning in real-world
+                applications where efficiency and fidelity are both paramount.
+            </i>
         </p>
 
         </div>
@@ -198,42 +213,43 @@
 
     <td width="67%" valign="top">
         <p>
-            <a href="https://arxiv.org/abs/2401.10278">
+            <a href="https://arxiv.org/abs/2407.21740">
 
-            <heading>EEGFormer: Towards Transferable and Interpretable Large-Scale EEG Foundation Model</heading></a>
+            <heading>Contrastive Factor Analysis</heading></a>
             <br>
-            Yuqi Chen,
-            Kan Ren,
-            Kaitao Song,
-            Yansen Wang,
-            <b>Yifan Wang</b>,
-            Dongsheng Li,
-            Lili Qiu
+            Zhibin Duan<sup>*</sup>,
+            <b>Tiansheng Wen<sup>*</sup></b>,
+            Yifei Wang,
+            Chen Zhu,
+            Bo Chen,
+            Mingyuan Zhou
             <br>
-            <em>AAAI</em>, 2024 SSS on Clinical FMs
+            <em>arXiv</em>, 2024
         </p>
 
         <div class="paper" id="eegformer">
-        <a href="javascript:toggleblock('eegformer_abs')">abstract</a> |
+        <a href="javascript:toggleblock('cfa_abs')">abstract</a> |
         <a href="https://arxiv.org/abs/2401.10278">paper</a> |
 
         <p align="justify">
-            <i id="eegformer_abs">
-              Self-supervised learning has emerged as a highly effective approach in the fields of 
-              natural language processing and computer vision. It is also applicable to brain signals such as 
-              electroencephalography (EEG) data, given the abundance of available unlabeled data that exist 
-              in a wide spectrum of real-world medical applications ranging from seizure detection to wave analysis. 
-              The existing works leveraging self-supervised learning on EEG modeling mainly focus on pretraining upon 
-              each individual dataset corresponding to a single downstream task, which cannot leverage the power of abundant 
-              data, and they may derive sub-optimal solutions with a lack of generalization. Moreover, these methods rely on 
-              end-to-end model learning which is not easy for humans to understand. In this paper, 
-              we present a novel EEG foundation model, namely EEGFormer, pretrained on large-scale compound EEG data. 
-              The pretrained model cannot only learn universal representations on EEG signals with adaptable performance on 
-              various downstream tasks but also provide interpretable outcomes of the useful patterns within the data. 
-              To validate the effectiveness of our model, we extensively evaluate it on various downstream tasks and assess 
-              the performance under different transfer settings. Furthermore, we demonstrate how the learned model exhibits 
-              transferable anomaly detection performance and provides valuable interpretability of the acquired patterns 
-              via self-supervised learning.
+            <i id="cfa_abs">
+              Factor analysis, often regarded as a Bayesian variant of matrix factorization,
+                offers superior capabilities in capturing uncertainty, modeling complex dependencies,
+                and ensuring robustness. As the deep learning era arrives, factor analysis is receiving
+                less and less attention due to their limited expressive ability. On the contrary,
+                contrastive learning has emerged as a potent technique with demonstrated efficacy
+                in unsupervised representational learning. While the two methods are different paradigms,
+                recent theoretical analysis has revealed the mathematical equivalence between contrastive
+                learning and matrix factorization, providing a potential possibility for factor analysis
+                combined with contrastive learning. Motivated by the interconnectedness of contrastive
+                learning, matrix factorization, and factor analysis, this paper introduces a novel
+                Contrastive Factor Analysis framework, aiming to leverage factor analysis's advantageous
+                properties within the realm of contrastive learning. To further leverage the interpretability
+                properties of non-negative factor analysis, which can learn disentangled representations,
+                contrastive factor analysis is extended to a non-negative version. Finally, extensive
+                experimental validation showcases the efficacy of the proposed contrastive (non-negative)
+                factor analysis methodology across multiple key properties, including expressiveness,
+                robustness, interpretability, and accurate uncertainty estimation.
             </i>
         </p>
 
@@ -245,7 +261,7 @@
   <tr>
     <td width="33%" valign="top" align="center">
         <a href="#">
-        <img src="img/veatic.png" alt="sym" width="300" height="200" style="border-radius:15px">
+        <img src="img/hice.png.png" alt="sym" width="300" height="200" style="border-radius:15px">
         <!-- <video autoplay loop muted playsinline width="300" height="300" style="border-radius:1px">
           <source src="./teaser-thumbnail_sdfusion.mp4" type="video/mp4">
         </video> -->
@@ -254,43 +270,32 @@
 
     <td width="67%" valign="top">
         <p>
-            <a href="https://veatic.github.io/">
+            <a href="https://dl.acm.org/doi/abs/10.1145/3664647.3681358">
 
-            <heading>VEATIC: Video-based Emotion and Affect Tracking in Context Dataset</heading></a>
+            <heading>HICEScore: A Hierarchical Metric for Image Captioning Evaluation</heading></a>
             <br>
-            Zhihang Ren<sup>*</sup>
-            Jefferson Ortega<sup>*</sup>
-            <b>Yifan Wang</b><sup>*</sup>
-            Zhimin Chen,
-            David Whitney,
-            Yunhui Guo,
-            Stella Yu
-            (* Equal contribution)
+            Zequn Zeng,
+            Jianqiao Sun,
+            Hao Zhang,
+            <b>Tiansheng Wen</b>,
+            Yudi Su,
+            Yan Xie,
+            Zhengjue Wang,
+            Bo Chen
             <br>
-            <em>WACV</em>, 2024
+            <em>ACM MM</em>, 2024
         </p>
 
         <div class="paper" id="Veatic">
-        <a href="https://veatic.github.io/">webpage</a> |
-        <a href="javascript:toggleblock('Veatic_abs')">abstract</a> |
-        <a href="https://openaccess.thecvf.com/content/WACV2024/papers/Ren_VEATIC_Video-Based_Emotion_and_Affect_Tracking_in_Context_Dataset_WACV_2024_paper.pdf">paper</a> |
-        <a href="https://github.com/AlbusPeter/VEATIC">code</a> |
+<!--        <a href="https://veatic.github.io/">webpage</a> |-->
+        <a href="javascript:toggleblock('hice_abs')">abstract</a> |
+        <a href="https://dl.acm.org/doi/abs/10.1145/3664647.3681358">paper</a> |
+        <a href="https://github.com/joeyz0z/HICE">code</a> |
 
         <p align="justify">
-            <i id="Veatic_abs">
-              Human affect recognition has been a significant topic in psychophysics and computer vision. 
-              However, the currently published datasets have many limitations. For example, most datasets contain frames 
-              that contain only information about facial expressions. Due to the limitations of previous datasets, 
-              it is very hard to either understand the mechanisms for affect recognition of humans or generalize well on 
-              common cases for computer vision models trained on those datasets. In this work, we introduce a brand new 
-              large dataset, the Video-based Emotion and Affect Tracking in Context Dataset (VEATIC), that can conquer 
-              the limitations of the previous datasets. VEATIC has 124 video clips from Hollywood movies, documentaries, 
-              and home videos with continuous valence and arousal ratings of each frame via real-time annotation. 
-              Along with the dataset, we propose a new computer vision task to infer the affect of the selected character 
-              via both context and character information in each video frame. Additionally, we propose a simple model to 
-              benchmark this new computer vision task. We also compare the performance of the pretrained model using our 
-              dataset with other similar datasets. Experiments show the competing results of our pretrained model via VEATIC, 
-              indicating the generalizability of VEATIC.
+            <i id="hice_abs">
+Image captioning evaluation metrics can be divided into two categories, reference-based metrics and reference-free metrics. However, reference-based approaches may struggle to evaluate descriptive captions with abundant visual details produced by advanced multimodal large language models, due to their heavy reliance on limited human-annotated references. In contrast, previous reference-free metrics have been proven effective via CLIP cross-modality similarity. Nonetheless, CLIP-based metrics, constrained by their solution of global image-text compatibility, often have a deficiency in detecting local textual hallucinations and are insensitive to small visual objects. Besides, their single-scale designs are unable to provide an interpretable evaluation process such as pinpointing the position of caption mistakes and identifying visual regions that have not been described. To move forward, we propose a novel reference-free metric for image captioning evaluation, dubbed Hierarchical Image Captioning Evaluation Score (HICE-S). By detecting local visual regions and textual phrases, HICE-S builds an interpretable hierarchical scoring mechanism, breaking through the barriers of the single-scale structure of existing reference-free metrics. Comprehensive experiments indicate that our proposed metric achieves the SOTA performance on several benchmarks, outperforming existing reference-free metrics like CLIP-S and PAC-S, and reference-based metrics like METEOR and CIDEr. Moreover, several case studies reveal that the assessment process of HICE-S on detailed captions closely resembles interpretable human judgments.
+                Our code is available at https://github.com/joeyz0z/HICE.
             </i>
         </p>
 
