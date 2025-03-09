@@ -128,7 +128,7 @@
     <sectionheading>&nbsp;🚀🚀 News</sectionheading>
     <ul>
       <li> [03/2025] Code for our paper <a href="https://arxiv.org/abs/2503.01776">CSR</a> has been released,
-                and we were invited to publish the model on HuggingFace. ⚙️⚙️ </li>
+                and we were invited to publish the model on Hugging Face! ⚙️⚙️ </li>
       <li> [02/2025] One paper was accepted by CVPR 2025! 🎉🎉 </li>
       <li> [07/2024] Our paper <a href="https://arxiv.org/abs/2407.18589">HICE-Score</a> was accepted by ACM MM 2024! 🎉🎉</li>
     </ul>
@@ -144,7 +144,7 @@
   <tr>
     <td width="33%" valign="top" align="center">
         <a href="#">
-        <img src="img/iclr25.png" alt="sym" width="300" height="200" style="border-radius:15px">
+        <img src="img/csr.png" alt="sym" width="300" height="200" style="border-radius:15px">
         <!-- <video autoplay loop muted playsinline width="300" height="300" style="border-radius:1px">
           <source src="./teaser-thumbnail_sdfusion.mp4" type="video/mp4">
         </video> -->
@@ -153,42 +153,32 @@
 
     <td width="67%" valign="top">
         <p>
-            <a href="https://openreview.net/forum?id=WQQyJbr5Lh">
+            <a href="https://arxiv.org/abs/2503.01776">
 
-            <heading>Discovering Influential Neuron Path in Vision Transformers</heading></a>
+            <heading>Beyond Matryoshka: Revisiting Sparse Coding for Adaptive Representation</heading></a>
             <br>
-            <b>Yifan Wang</b>,
-              Yifei Liu,
-              Yingdong Shi,
-              Changming Li,
-              Anqi Pang,
-              Sibei Yang,
-              Jingyi Yu,
-              Kan Ren
+            <b>Tiansheng Wen*</b>,
+              Yifei Wang*,
+              Zequn Zeng,
+              Zhong Peng,
+              Yudi Su,
+              Xinyang Liu,
+              Bo Chen,
+              Hongwei Liu,
+              Stefanie Jegelka,
+              Chenyu You
             <br>
-            <em>ICLR</em>, 2025
+            <em>arXiv</em>, 2025
         </p>
 
-        <div class="paper" id="iclr_25">
-        <a href="javascript:toggleblock('iclr_25_abs')">abstract</a> |
-        <a href="https://openreview.net/forum?id=WQQyJbr5Lh">paper</a> |
-        <a href="https://github.com/foundation-model-research/NeuronPath">code</a> |
+        <div class="paper" id="csr">
+        <a href="javascript:toggleblock('CSR_abs')">abstract</a> |
+        <a href="https://arxiv.org/abs/2503.01776">paper</a> |
+        <a href="https://github.com/neilwen987/CSR_Adaptive_Rep">code</a> |
 
         <p align="justify">
-            <i id="iclr_25_abs">
-              Vision Transformer models exhibit immense power yet remain opaque to human understanding, posing challenges and risks for practical applications. 
-              While prior research has attempted to demystify these models through input attribution and neuron role analysis,
-              there's been a notable gap in considering layer-level information and the holistic path of information flow across layers.
-              In this paper, we investigate the significance of influential neuron paths within vision Transformers, which is a path of neurons from the model input to output that impacts the model inference most significantly.
-              We first propose a joint influence measure to assess the contribution of a set of neurons to the model outcome.
-              And we further provide a 
-              layer-progressive neuron locating
-              approach that efficiently selects the most influential neuron at each layer trying to discover the crucial neuron path from input to output within the target model.
-              Our experiments demonstrate the superiority of our method finding the most influential neuron path along which the information flows, over the existing baseline solutions.
-              Additionally, the neuron paths have illustrated that vision Transformers exhibit some specific inner working mechanism for processing the visual information within the same image category. 
-              We further analyze the key effects of these neurons on the image classification task, showcasing that the found neuron paths have already preserved the model capability on downstream tasks, which may also shed some lights on real-world applications like model pruning.
-              The project website including implementation code is available at <a href="https://foundation-model-research.github.io/NeuronPath/">https://foundation-model-research.github.io/NeuronPath/</a>.
-            </i>
+            <i id="CSR_abs">
+              Many large-scale systems rely on high-quality deep representations (embeddings) to facilitate tasks like retrieval, search, and generative modeling. Matryoshka Representation Learning (MRL) recently emerged as a solution for adaptive embedding lengths, but it requires full model retraining and suffers from noticeable performance degradations at short lengths. In this paper, we show that sparse coding offers a compelling alternative for achieving adaptive representation with minimal overhead and higher fidelity. We propose Contrastive Sparse Representation (CSR), a method that sparsifies pre-trained embeddings into a high-dimensional but selectively activated feature space. By leveraging lightweight autoencoding and task-aware contrastive objectives, CSR preserves semantic quality while allowing flexible, cost-effective inference at different sparsity levels. Extensive experiments on image, text, and multimodal benchmarks demonstrate that CSR consistently outperforms MRL in terms of both accuracy and retrieval speed-often by large margins-while also cutting training time to a fraction of that required by MRL. Our results establish sparse coding as a powerful paradigm for adaptive representation learning in real-world applications where efficiency and fidelity are both paramount. </i>
         </p>
 
         </div>
