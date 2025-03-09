@@ -202,9 +202,9 @@
 
 
   <tr>
-    <td width="33%" valign="top" align="center">
+    <td width="5%" valign="top" align="center">
         <a href="#">
-        <img src="img/vqpatch.png" alt="sym" width="300" height="200" style="border-radius:15px">
+        <img src="img/cfa.png" alt="sym" width="400" height="100" style="border-radius:15px">
         <!-- <video autoplay loop muted playsinline width="300" height="300" style="border-radius:1px">
           <source src="./teaser-thumbnail_sdfusion.mp4" type="video/mp4">
         </video> -->
@@ -261,7 +261,7 @@
   <tr>
     <td width="33%" valign="top" align="center">
         <a href="#">
-        <img src="img/hice.png.png" alt="sym" width="300" height="200" style="border-radius:15px">
+        <img src="img/hice.png" alt="sym" width="300" height="200" style="border-radius:15px">
         <!-- <video autoplay loop muted playsinline width="300" height="300" style="border-radius:1px">
           <source src="./teaser-thumbnail_sdfusion.mp4" type="video/mp4">
         </video> -->
@@ -296,6 +296,47 @@
             <i id="hice_abs">
 Image captioning evaluation metrics can be divided into two categories, reference-based metrics and reference-free metrics. However, reference-based approaches may struggle to evaluate descriptive captions with abundant visual details produced by advanced multimodal large language models, due to their heavy reliance on limited human-annotated references. In contrast, previous reference-free metrics have been proven effective via CLIP cross-modality similarity. Nonetheless, CLIP-based metrics, constrained by their solution of global image-text compatibility, often have a deficiency in detecting local textual hallucinations and are insensitive to small visual objects. Besides, their single-scale designs are unable to provide an interpretable evaluation process such as pinpointing the position of caption mistakes and identifying visual regions that have not been described. To move forward, we propose a novel reference-free metric for image captioning evaluation, dubbed Hierarchical Image Captioning Evaluation Score (HICE-S). By detecting local visual regions and textual phrases, HICE-S builds an interpretable hierarchical scoring mechanism, breaking through the barriers of the single-scale structure of existing reference-free metrics. Comprehensive experiments indicate that our proposed metric achieves the SOTA performance on several benchmarks, outperforming existing reference-free metrics like CLIP-S and PAC-S, and reference-based metrics like METEOR and CIDEr. Moreover, several case studies reveal that the assessment process of HICE-S on detailed captions closely resembles interpretable human judgments.
                 Our code is available at https://github.com/joeyz0z/HICE.
+            </i>
+        </p>
+
+        </div>
+    </td>
+  </tr>
+
+    <tr>
+    <td width="33%" valign="top" align="center">
+        <a href="#">
+        <img src="img/gammavae.png" alt="sym" width="400" height="200" style="border-radius:15px">
+        <!-- <video autoplay loop muted playsinline width="300" height="300" style="border-radius:1px">
+          <source src="./teaser-thumbnail_sdfusion.mp4" type="video/mp4">
+        </video> -->
+        </a>
+    </td>
+
+    <td width="67%" valign="top">
+        <p>
+            <a href="https://arxiv.org/abs/2408.03388">
+
+            <heading>A Non-negative VAE: the Generalized Gamma Belief Network</heading></a>
+            <br>
+            Zhibin Duan,
+            <b>Tiansheng Wen</b>,
+            Muyao Wang,
+            Bo Chen,
+            Mingyuan Zhou
+            <br>
+            <em>arXiv</em>, 2024
+        </p>
+
+        <div class="paper" id="Veatic">
+<!--        <a href="https://veatic.github.io/">webpage</a> |-->
+        <a href="javascript:toggleblock('gammavae_abs')">abstract</a> |
+        <a href="https://arxiv.org/abs/2408.03388">paper</a> |
+<!--        <a href="https://github.com/joeyz0z/HICE">code</a> |-->
+
+        <p align="justify">
+            <i id="gammavae_abs">
+The gamma belief network (GBN), often regarded as a deep topic model, has demonstrated its potential for uncovering multi-layer interpretable latent representations in text data. Its notable capability to acquire interpretable latent factors is partially attributed to sparse and non-negative gamma-distributed latent variables. However, the existing GBN and its variations are constrained by the linear generative model, thereby limiting their expressiveness and applicability. To address this limitation, we introduce the generalized gamma belief network (Generalized GBN) in this paper, which extends the original linear generative model to a more expressive non-linear generative model. Since the parameters of the Generalized GBN no longer possess an analytic conditional posterior, we further propose an upward-downward Weibull inference network to approximate the posterior distribution of the latent variables. The parameters of both the generative model and the inference network are jointly trained within the variational inference framework. Finally, we conduct comprehensive experiments on both expressivity and disentangled representation learning tasks to evaluate the performance of the Generalized GBN against state-of-the-art Gaussian variational autoencoders serving as baselines.
             </i>
         </p>
 
@@ -346,15 +387,19 @@ hideallbibs();
 </script>
 
 <script xml:space="preserve" language="JavaScript">
-  hideblock('iclr_25_abs');
+  hideblock('CSR_abs');
 </script>
 
 <script xml:space="preserve" language="JavaScript">
-  hideblock('eegformer_abs');
+  hideblock('cfa_abs');
 </script>
 
 <script xml:space="preserve" language="JavaScript">
-  hideblock('Veatic_abs');
+  hideblock('hice_abs');
+</script>
+
+<script xml:space="preserve" language="JavaScript">
+  hideblock('gammavae_abs');
 </script>
 
 </script>
