@@ -208,6 +208,61 @@
         </div>
     </td>
   </tr>
+  <tr>
+    <td width="5%" valign="top" align="center">
+        <a href="#">
+        <img src="img/lance.png" alt="sym" width="400" height="200" style="border-radius:15px">
+        <!-- <video autoplay loop muted playsinline width="300" height="300" style="border-radius:1px">
+          <source src="./teaser-thumbnail_sdfusion.mp4" type="video/mp4">
+        </video> -->
+        </a>
+    </td>
+
+    <td width="67%" valign="top">
+        <p>
+            <a href="https://arxiv.org/abs/2503.18483">
+
+            <heading>Explaining Domain Shifts in Language: Concept erasing for Interpretable Image Classification
+</heading></a>
+            <br>
+            Zequn Zeng,
+            Yudi Su,
+            Jianqiao Sun,
+            <b>Tiansheng Wen</b>,
+            Hao Zhang,
+            Zhengjue Wang,
+            Bo Chen,
+            Hongwei Liu,
+            Jiawei Ma
+            <br>
+            <em>CVPR</em>, 2025
+        </p>
+
+        <div class="paper" id="eegformer">
+        <a href="javascript:toggleblock('cfa_abs')">abstract</a> |
+        <a href="https://arxiv.org/abs/2503.18483">paper</a> |
+        <a href="https://github.com/joeyz0z/LanCE">code</a> |
+
+        <p align="justify">
+            <i id="lance_abs">
+                Concept-based models can map black-box representations to human-understandable concepts,
+                which makes the decision-making process more transparent and then allows users to understand the reason behind predictions.
+                However, domain-specific concepts often impact the final predictions, which subsequently undermine the model generalization capabilities, and prevent the model from being used in high-stake applications.
+                In this paper, we propose a novel Language-guided Concept-Erasing (LanCE) framework.
+                In particular, we empirically demonstrate that pre-trained vision-language models (VLMs) can approximate
+                distinct visual domain shifts via domain descriptors while prompting large Language Models (LLMs) can easily
+                simulate a wide range of descriptors of unseen visual domains. Then, we introduce a novel plug-in domain
+                descriptor orthogonality (DDO) regularizer to mitigate the impact of these domain-specific concepts on the
+                final predictions. Notably, the DDO regularizer is agnostic to the design of concept-based models and we
+                integrate it into several prevailing models. Through evaluation of domain generalization on four standard
+                benchmarks and three newly introduced benchmarks, we demonstrate that DDO can significantly improve the
+                out-of-distribution (OOD) generalization over the previous state-of-the-art concept-based model.
+            </i>
+        </p>
+
+        </div>
+    </td>
+  </tr>
 
 
   <tr>
@@ -353,13 +408,16 @@ The gamma belief network (GBN), often regarded as a deep topic model, has demons
     </td>
   </tr>
 
+
+
+
 <table width="100%" align="center" border="0" cellpadding="10">
   <tr>
     <td>
       <sectionheading>&nbsp;&nbsp;Professional Activity</sectionheading>
         <ul>
 <!--          <li> Conference Reviewer: MICCAI 2025, CVPR 2025</li>-->
-          <li> Journal Reviewer: TNNLS</li>
+          <li> Journal Reviewer: TNNLS,TMI</li>
 <!--          <li> Teaching Assistant: CSE 549, IAE 101</li>-->
         </ul>
     </td>
@@ -397,6 +455,10 @@ hideallbibs();
 
 <script xml:space="preserve" language="JavaScript">
   hideblock('CSR_abs');
+</script>
+
+<script xml:space="preserve" language="JavaScript">
+  hideblock('lance_abs');
 </script>
 
 <script xml:space="preserve" language="JavaScript">
