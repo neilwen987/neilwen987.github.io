@@ -5,6 +5,15 @@
   <meta name="generator" content="HTML Tidy for Linux/x86 (vers 11 February 2007), see www.w3.org">
   <style type="text/css">
   /* Design Credits: Jon Barron and Abhishek Kar and Saurabh Gupta*/
+  :root {
+    --container-max: 960px;
+    --space-xxs: 4px;
+    --space-xs: 8px;
+    --space-s: 12px;
+    --space-m: 16px;
+    --space-l: 24px;
+    --space-xl: 32px;
+  }
   a {
   color: #1772d0;
   text-decoration:none;
@@ -16,7 +25,9 @@
   body,td,th {
     font-family: 'Titillium Web', Verdana, Helvetica, sans-serif;
     font-size: 16px;
-    font-weight: 400
+    font-weight: 400;
+    line-height: 1.65;
+    color: #222
   }
   heading {
     font-family: 'Titillium Web', Verdana, Helvetica, sans-serif;
@@ -50,8 +61,65 @@
     padding: 50px 0px;
   }
 
+  /* Global rhythm and spacing */
+  p { margin: 0 0 var(--space-m); }
+  h2 { margin: var(--space-xl) 0 var(--space-m); font-weight: 700; line-height: 1.3; }
+  heading, sectionheading, pageheading { display: block; }
+  heading { margin: var(--space-s) 0 var(--space-xs); line-height: 1.35; }
+  sectionheading { margin: var(--space-l) 0 var(--space-s); line-height: 1.4; }
+  pageheading { margin: var(--space-l) 0 var(--space-s); line-height: 1.2; }
+  ul { margin: 0 0 var(--space-m) 20px; }
+  ul.other-interests li { margin-bottom: 6px; }
+
+  /* Tables as layout containers */
+  table { border-collapse: separate; border-spacing: 0; }
+  table[width="960"], table[width="840"] { width: 100% !important; max-width: var(--container-max); }
+  td { vertical-align: top; }
+
+  /* Paper blocks */
+  .paper p { margin: 0 0 var(--space-s); }
+
+  /* News box styling */
+  .news-box {
+    background: #fafbfd;
+    border: 1px solid #e8ecf3;
+    padding: var(--space-m);
+    border-radius: 10px;
+    box-shadow: 0 1px 2px rgba(0,0,0,0.03);
+    max-height: 260px;
+    overflow-y: auto;
+  }
+  .news-box ul { margin: 0; padding-left: 18px; }
+  .news-box li { margin: 6px 0; }
+
+  /* Images */
+  img { border-radius: 12px; }
+
+  /* Responsive tweaks */
+  @media (max-width: 640px) {
+    td[width="40%"],
+    td[width="67%"],
+    td[width="33%"],
+    td[width="30%"],
+    td[width="5%"] { display: block; width: 100% !important; }
+    img { width: 100% !important; height: auto !important; }
+    pageheading { font-size: 30px; }
+    body,td,th { font-size: 17px; }
+  }
+
+  /* Section spacing helpers */
+  p[align="center"] { margin-bottom: var(--space-m); }
+  table[width="100%"][cellpadding="10"] { margin-top: var(--space-xl); }
+  .news-box { margin: var(--space-l) 0; }
+
+  /* Publications list styling */
+  #pubs tr + tr td { padding-top: var(--space-l); border-top: 1px solid #e8ecf3; }
+  #pubs td:first-child { width: 32% !important; }
+  #pubs td:nth-child(2) { width: 68% !important; }
+
   </style>
   <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>⚡️</text></svg>" type="image/svg+xml">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="apple-touch-icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>⚡️️</text></svg>">
   <script type="text/javascript" src="js/hidebib.js"></script>
   <title>Tiansheng Wen</title>
@@ -75,7 +143,7 @@
   </p>
 
   <tr>
-    <td width="40%" valign="top"><a href="img/profile.png"><img src="img/profile.png" width="100%" style="border-radius:15px"></a>
+    <td width="38%" valign="top"><a href="img/profile.png"><img src="img/profile.png" width="100%" style="border-radius:15px"></a>
         <p align=center>
           | <a href="data/CV_3_9.pdf">CV</a> |
           <a href="https://scholar.google.com.hk/citations?hl=zh-CN&user=mrdyOyQAAAAJ">Google Scholar</a> |
@@ -86,10 +154,12 @@
       </p>
     </td>
 
-    <td width="100%" valign="top" align="justify">
+    <td width="62%" valign="top" align="justify">
         <p>
-         Howdy! Welcome to my home page.
-            I am a third-year M.S. student at Xidian University, advised by Prof. <a href="https://web.xidian.edu.cn/bchen/">Bo Chen</a>. Concurrently, I serve as a Research Intern at Stony Brook University, working with Prof. <a href="https://chenyuyou.me/">Chenyu You</a>. Prior to my graduate studies, I received my B.S. degree from Xidian University in 2023.
+         Howdy! Welcome to my home page.👋
+            I am a third-year M.S. student at Xidian University, advised by Prof. <a href="https://web.xidian.edu.cn/bchen/">Bo Chen</a>. Concurrently, I serve as a Research Intern at Stony Brook University, working with Prof. <a href="https://chenyuyou.me/">Chenyu You</a>. 
+            I also work closely with <a href="https://yifeiwang77.com/">Yifei Wang</a> and Prof. <a href="https://people.csail.mit.edu/stefje/">Stefanie Jegelka</a>, developing efficient and scalable sparse methods.
+            Prior to my graduate studies, I received my B.S. degree from Xidian University in 2023.
             <br>
         <br>
         <h2>🔥 I am actively seeking for a PhD in 26Fall in US.</h2>
@@ -119,7 +189,7 @@
                   </a>
               </p>
     
-<div style="max-height: 200px; overflow-y: auto;">
+<div class="news-box">
     <sectionheading>&nbsp;🚀🚀 News</sectionheading>
       <ul>
       <li> [07/2025] The wait is over! <a href="https://arxiv.org/abs/2503.01776">CSR</a> is now available in  <a href="https://huggingface.co/blog/train-sparse-encoder">Sentence-Transformer v5.0!</a> 🤗🤗</li>  
@@ -134,7 +204,7 @@
 <table width="100%" align="center" border="0" cellspacing="0" cellpadding="10">
   <tr><td><sectionheading>&nbsp;📑📑Publications</sectionheading></td></tr>
 </table>
-<table width="100%" align="center" border="0" cellspacing="0" cellpadding="15">
+<table id="pubs" width="100%" align="center" border="0" cellspacing="0" cellpadding="15">
 
 
   <tr>
@@ -147,7 +217,7 @@
         </a>
     </td>
 
-    <td width="67%" valign="top">
+    <td width="70%" valign="top">
         <p>
             <a href="https://arxiv.org/abs/2503.01776">
 
@@ -201,7 +271,7 @@
     </td>
   </tr>
   <tr>
-    <td width="5%" valign="top" align="center">
+    <td width="30%" valign="top" align="center">
         <a href="#">
         <img src="img/lance.png" alt="sym" width="400" height="200" style="border-radius:15px">
         <!-- <video autoplay loop muted playsinline width="300" height="300" style="border-radius:1px">
@@ -210,7 +280,7 @@
         </a>
     </td>
 
-    <td width="67%" valign="top">
+    <td width="70%" valign="top">
         <p>
             <a href="https://arxiv.org/abs/2503.18483">
 
@@ -263,7 +333,7 @@
 
 
   <tr>
-    <td width="5%" valign="top" align="center">
+    <td width="33%" valign="top" align="center">
         <a href="#">
         <img src="img/cfa.png" alt="sym" width="400" height="100" style="border-radius:15px">
         <!-- <video autoplay loop muted playsinline width="300" height="300" style="border-radius:1px">
@@ -418,7 +488,7 @@ The gamma belief network (GBN), often regarded as a deep topic model, has demons
     <td>
       <sectionheading>&nbsp;&nbsp;Professional Activity</sectionheading>
         <ul>
-<!--          <li> Conference Reviewer: MICCAI 2025, CVPR 2025</li>-->
+          <li> Conference Reviewer: AAAI 2025, ICLR 2025</li>
           <li> Journal Reviewer: TPAMI, TNNLS, TMI, Pattern Recognition</li>
 <!--          <li> Teaching Assistant: CSE 549, IAE 101</li>-->
         </ul>
@@ -473,8 +543,6 @@ hideallbibs();
 
 <script xml:space="preserve" language="JavaScript">
   hideblock('gammavae_abs');
-</script>
-
 </script>
 </body>
 
