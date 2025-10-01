@@ -86,7 +86,7 @@
     padding: var(--space-s) var(--space-m) var(--space-m);
     border-radius: 10px;
     box-shadow: 0 1px 2px rgba(0,0,0,0.03);
-    max-height: 260px;
+    max-height: 250px;
     overflow-y: auto;
   }
   .news-box ul { margin: 0; padding-left: 18px; }
@@ -117,6 +117,10 @@
   #pubs tr + tr td { padding-top: var(--space-l); border-top: 1px solid #e8ecf3; }
   #pubs td:first-child { width: 32% !important; }
   #pubs td:nth-child(2) { width: 68% !important; }
+
+  /* Tighter spacing between title and authors in publications */
+  #pubs heading { margin: 0 0 0px; }
+  #pubs heading + br { display: none; }
 
   </style>
   <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>⚡️</text></svg>" type="image/svg+xml">
@@ -207,7 +211,7 @@
 </table>
 <table id="pubs" width="100%" align="center" border="0" cellspacing="0" cellpadding="15">
 
-
+  
   <tr>
     <td width="30%" valign="top" align="center">
         <a href="#">
@@ -221,9 +225,7 @@
     <td width="70%" valign="top">
         <p>
             <a href="https://arxiv.org/abs/2503.01776">
-
             <heading>Beyond Matryoshka: Revisiting Sparse Coding for Adaptive Representation</heading></a>
-            <br>
             <b>Tiansheng Wen<sup>*</sup></b>,
              <a href="https://yifeiwang77.com/" target="_blank">Yifei Wang<sup>*</sup></a>,
               <a href="https://joeyz0z.github.io/" target="_blank">Zequn Zeng</a>,
@@ -237,7 +239,6 @@
             <br>
             <em>ICML </em>2025, <b><font color="red">Oral Presentation</font></b> 
         </p>
-
         <div class="paper" id="csr">
         <a href="javascript:toggleblock('CSR_abs')">abstract</a> |
         <a href="https://arxiv.org/abs/2503.01776">paper</a> |
@@ -272,6 +273,7 @@
         </div>
     </td>
   </tr>
+
   <tr>
     <td width="30%" valign="top" align="center">
         <a href="#">
@@ -288,7 +290,6 @@
 
             <heading>Explaining Domain Shifts in Language: Concept erasing for Interpretable Image Classification
 </heading></a>
-            <br>
             <a href="https://joeyz0z.github.io/" target="_blank">Zequn Zeng*</a>,
             Yudi Su*,
             Jianqiao Sun,
@@ -344,12 +345,11 @@
         </a>
     </td>
 
-    <td width="67%" valign="top">
+    <td width="70%" valign="top">
         <p>
             <a href="https://arxiv.org/abs/2407.21740">
 
             <heading>Contrastive Factor Analysis</heading></a>
-            <br>
             Zhibin Duan<sup>*</sup>,
             <b>Tiansheng Wen<sup>*</sup></b>,
             <a href="https://yifeiwang77.com/" target="_blank">Yifei Wang</a>,
@@ -357,7 +357,7 @@
             <a href="https://web.xidian.edu.cn/bchen/en/index.html" target="_blank">Bo Chen</a>,
             <a href="https://mingyuanzhou.github.io/" target="_blank">Mingyuan Zhou</a>,
             <br>
-            <!-- <em>arXiv</em> --> Under IJCV Review
+            <!-- <em>arXiv</em> --> IJCV (Under Review)
         </p>
 
         <div class="paper" id="eegformer">
@@ -394,19 +394,18 @@
   <tr>
     <td width="33%" valign="top" align="center">
         <a href="#">
-        <img src="img/hice.png" alt="sym" width="300" height="200" style="border-radius:15px">
+        <img src="img/hice.png" alt="sym" width="100" height="300" style="border-radius:15px">
         <!-- <video autoplay loop muted playsinline width="300" height="300" style="border-radius:1px">
           <source src="./teaser-thumbnail_sdfusion.mp4" type="video/mp4">
         </video> -->
         </a>
     </td>
 
-    <td width="67%" valign="top">
+    <td width="70%" valign="top">
         <p>
             <a href="https://dl.acm.org/doi/abs/10.1145/3664647.3681358">
 
             <heading>HICEScore: A Hierarchical Metric for Image Captioning Evaluation</heading></a>
-            <br>
             <a href="https://joeyz0z.github.io/" target="_blank">Zequn Zeng*</a>,
             Jianqiao Sun,
             Hao Zhang,
@@ -442,7 +441,7 @@ Image captioning evaluation metrics can be divided into two categories, referenc
   </tr>
 
     <tr>
-    <td width="33%" valign="top" align="center">
+    <td width="35%" valign="top" align="center">
         <a href="#">
         <img src="img/gammavae.png" alt="sym" width="400" height="200" style="border-radius:15px">
         <!-- <video autoplay loop muted playsinline width="300" height="300" style="border-radius:1px">
@@ -451,19 +450,19 @@ Image captioning evaluation metrics can be divided into two categories, referenc
         </a>
     </td>
 
-    <td width="67%" valign="top">
+    <td width="70%" valign="top">
         <p>
             <a href="https://arxiv.org/abs/2408.03388">
 
             <heading>A Non-negative VAE: the Generalized Gamma Belief Network</heading></a>
-            <br>
+            
             Zhibin Duan,
             <b>Tiansheng Wen</b>,
             Muyao Wang,
             <a href="https://web.xidian.edu.cn/bchen/en/index.html" target="_blank">Bo Chen</a>,
-            <a href="https://mingyuanzhou.github.io/" target="_blank">Mingyuan Zhou</a>,
+            <a href="https://mingyuanzhou.github.io/" target="_blank">Mingyuan Zhou</a>
             <br>
-            <!-- <em>arXiv</em> --> Under TPAMI Review
+            <!-- <em>arXiv</em> --> TPAMI (Under Review)
         </p>
 
         <div class="paper" id="Veatic">
