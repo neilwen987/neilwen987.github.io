@@ -278,6 +278,112 @@
   <tr>
     <td width="30%" valign="top" align="center">
         <a href="#">
+        <img src="img/seqtopk.svg" alt="sym" width="300" height="250" style="border-radius:15px">
+        <!-- <video autoplay loop muted playsinline width="300" height="300" style="border-radius:1px">
+          <source src="./teaser-thumbnail_sdfusion.mp4" type="video/mp4">
+        </video> -->
+        </a>
+    </td>
+
+    <td width="70%" valign="top">
+        <p>
+            <a href="https://arxiv.org/abs/2503.01776">
+            <heading>Route Experts by Sequence, not by Token</heading></a>
+            <b>Tiansheng Wen<sup>*</sup></b>,
+             <a href="https://yifeiwang77.com/" target="_blank">Yifei Wang<sup>*</sup></a>,
+             <a href="https://scholar.google.com/citations?user=hFhhrmgAAAAJ&hl=en" target="_blank">Aosong Feng</a>,
+              Long Ma,
+              <a href="https://xinyangatk.github.io/" target="_blank">Xinyang Liu</a>,
+              <a href="https://yfwang.me/" target="_blank">Yifan Wang</a>,
+              <a href="https://veritas2024.github.io/" target="_blank">Lixuan Guo</a>,
+              <a href="https://web.xidian.edu.cn/bchen/en/index.html" target="_blank">Bo Chen</a>,
+              <a href="https://people.csail.mit.edu/stefje/" target="_blank">Stefanie Jegelka</a>,
+              <a href="https://chenyuyou.me/" target="_blank">Chenyu You</a>
+            <br>
+            <em>Arxiv </em>2025 
+        </p>
+        <div class="paper" id="seqtopk">
+        <a href="javascript:toggleblock('seqtopk_abs')">abstract</a> |
+        <a href="https://arxiv.org/abs/2503.01776">paper</a> |
+        <a href="https://github.com/Y-Research-SBU/SeqTopK">code</a> 
+
+        <p align="justify">
+            <i id="seqtopk_abs">
+              Mixture-of-Experts (MoE) architectures scale large language models (LLMs) by activating
+              only a subset of experts per token, but the standard <em>TopK</em> routing assigns the same 
+              fixed number of experts to all tokens, ignoring their varying complexity. Prior adaptive 
+              routing methods introduce additional modules and hyperparameters, often requiring costly 
+              retraining from scratch. We propose <strong>Sequence-level TopK (SeqTopK)</strong>, 
+              a minimal modification that shifts the expert budget from the token level to the sequence 
+              level. By selecting the top T &times; K experts across all T tokens, SeqTopK enables 
+              end-to-end learned dynamic allocation -- assigning more experts to difficult tokens and 
+              fewer to easy ones -- while preserving the same overall budget. SeqTopK requires only a 
+              few lines of code, adds less than 1% overhead, and remains fully compatible with pretrained 
+              MoE models. Experiments across math, coding, law, and writing show consistent improvements 
+              over TopK and prior parameter-free adaptive methods, with gains that become substantially 
+              larger under higher sparsity (up to 16.9%). These results highlight SeqTopK as a simple, 
+              efficient, and scalable routing strategy, particularly well-suited for the extreme sparsity 
+              regimes of next-generation LLMs.
+            </i>
+        </p>
+
+        </div>
+    </td>
+  </tr>
+
+  <tr>
+    <td width="30%" valign="top" align="center">
+        <a href="#">
+        <img src="img/csrv2.jpg" alt="sym" width="300" height="200" style="border-radius:15px">
+        <!-- <video autoplay loop muted playsinline width="300" height="300" style="border-radius:1px">
+          <source src="./teaser-thumbnail_sdfusion.mp4" type="video/mp4">
+        </video> -->
+        </a>
+    </td>
+
+    <td width="70%" valign="top">
+        <p>
+            <a href="https://arxiv.org/abs/2503.01776">
+            <heading>CSRV2: Unlocking Ultra-Sparse Embeddings </heading></a>
+            <a href="https://veritas2024.github.io/" target="_blank">Lixuan Guo<sup>*</sup></a>,
+             <a href="https://yifeiwang77.com/" target="_blank">Yifei Wang<sup>*</sup></a>,
+             <b>Tiansheng Wen<sup>*</sup></b>,
+             <a href="https://yfwang.me/" target="_blank">Yifan Wang</a>,
+             <a href="https://scholar.google.com/citations?user=hFhhrmgAAAAJ&hl=en" target="_blank">Aosong Feng</a>,
+              <a href="https://web.xidian.edu.cn/bchen/en/index.html" target="_blank">Bo Chen</a>,
+              <a href="https://people.csail.mit.edu/stefje/" target="_blank">Stefanie Jegelka</a>,
+              <a href="https://chenyuyou.me/" target="_blank">Chenyu You</a>
+            <br>
+            <em>Arxiv </em>2025 
+        </p>
+        <div class="paper" id="csrv2">
+        <a href="javascript:toggleblock('csrv2_abs')">abstract</a> |
+        <a href="https://arxiv.org/abs/2503.01776">paper</a> |
+        <a href="https://github.com/Y-Research-SBU/CSRv2/tree/main">code</a> 
+
+        <p align="justify">
+            <i id="csrv2_abs">
+              In the era of large foundation models, the quality of embeddings has become a central determinant of downstream task performance and overall system capability.
+              Yet widely used dense embeddings are often extremely high-dimensional (e.g., 4096), incurring substantial costs in storage, memory, and inference latency.
+              To address these, Contrastive Sparse Representation (CSR) is recently proposed as a promising direction, mapping dense embeddings into high-dimensional but <i>k</i>-sparse vectors, in contrast to compact dense embeddings such as Matryoshka Representation Learning (MRL).
+              Despite its promise, CSR suffers severe degradation in the ultra-sparse regime (e.g., <i>k</i> &leq; 4), where over 80% of neurons remain inactive, leaving much of its efficiency potential unrealized.
+              In this paper, we introduce <strong>CSRv2</strong>, a principled training approach designed to make ultra-sparse embeddings viable.
+              CSRv2 stabilizes sparsity learning through progressive <i>k</i>-annealing, enhances representational quality via supervised contrastive objectives, and ensures end-to-end adaptability with full backbone finetuning.
+              CSRv2 reduces dead neurons from 80% to 20% and delivers a 14% accuracy gain at <i>k</i>=2, bringing ultra-sparse embeddings on par with CSR at <i>k</i>=8 and MRL at 32 dimensions, <em>all with only two active features</em>.
+              While maintaining comparable performance, CSRv2 delivers a {7&times; speedup over MRL}, and yields up to <strong>300&times; improvements in compute and memory efficiency</strong> relative to dense embeddings.
+              Extensive experiments across text (MTEB, multiple state-of-the-art LLM embeddings (Qwen and e5-Mistral-7B)) and vision (ImageNet-1k) demonstrate that CSRv2 makes ultra-sparse embeddings practical without compromising performance.
+              By making extreme sparsity viable, CSRv2 broadens the design space for large-scale, real-time, and edge-deployable AI systems where both embedding quality and efficiency are critical.
+            </i>
+        </p>
+
+        </div>
+    </td>
+  </tr>
+  
+  
+  <tr>
+    <td width="30%" valign="top" align="center">
+        <a href="#">
         <img src="img/lance.png" alt="sym" width="400" height="200" style="border-radius:15px">
         <!-- <video autoplay loop muted playsinline width="300" height="300" style="border-radius:1px">
           <source src="./teaser-thumbnail_sdfusion.mp4" type="video/mp4">
@@ -529,6 +635,14 @@ hideallbibs();
 
 <script xml:space="preserve" language="JavaScript">
   hideblock('CSR_abs');
+</script>
+
+<script xml:space="preserve" language="JavaScript">
+  hideblock('seqtopk_abs');
+</script>
+
+<script xml:space="preserve" language="JavaScript">
+  hideblock('csrv2_abs');
 </script>
 
 <script xml:space="preserve" language="JavaScript">
