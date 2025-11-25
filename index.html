@@ -73,7 +73,6 @@
 
   /* Tables as layout containers */
   table { border-collapse: separate; border-spacing: 0; }
-  table[width="960"], table[width="840"] { width: 100% !important; max-width: var(--container-max); }
   td { vertical-align: top; }
 
   /* Paper blocks */
@@ -96,40 +95,6 @@
   /* Images */
   img { border-radius: 12px; }
 
-  /* Responsive tweaks */
-  @media (max-width: 640px) {
-  td[width="40%"],
-  td[width="38%"],
-  td[width="67%"],
-  td[width="62%"],
-  td[width="35%"],
-  td[width="33%"],
-  td[width="30%"],
-  td[width="5%"] {
-    display: block;
-    width: 100% !important;
-  }
-
-  img {
-    width: 100% !important;
-    height: auto !important;
-  }
-
-  pageheading {
-    font-size: 30px;
-  }
-
-  body,td,th {
-    font-size: 17px;
-  }
-  #pubs td:first-child, 
-    #pubs td:nth-child(2) {
-        display: block !important;
-        width: 100% !important;
-        padding-top: 20px !important; /* 图片和文字之间增加一点间距 */
-    }
-}
-
   /* Section spacing helpers */
   p[align="center"] { margin-bottom: var(--space-m); }
   table[width="100%"][cellpadding="10"] { margin-top: var(--space-l); }
@@ -146,7 +111,8 @@
 
   </style>
   <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>⚡️</text></svg>" type="image/svg+xml">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <!-- Removed viewport meta to match desktop-style scaling behavior on mobile (similar to index_yifan.html) -->
+  <!-- <meta name="viewport" content="width=device-width, initial-scale=1"> -->
   <link rel="apple-touch-icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>⚡️️</text></svg>">
   <script type="text/javascript" src="js/hidebib.js"></script>
   <title>Tiansheng Wen</title>
