@@ -3,6 +3,10 @@
 
 <head>
   <meta name="generator" content="HTML Tidy for Linux/x86 (vers 11 February 2007), see www.w3.org">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Fira+Sans:wght@400;500;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" type="text/css" href="stylesheet.css">
   <style type="text/css">
   /* Design Credits: Jon Barron and Abhishek Kar and Saurabh Gupta*/
   :root {
@@ -17,40 +21,41 @@
   a {
   color: #1772d0;
   text-decoration:none;
+  font-size: 16px;
   }
   a:focus, a:hover {
   color: #f09228;
   text-decoration:none;
   }
   body,td,th {
-    font-family: 'Titillium Web', Verdana, Helvetica, sans-serif;
+    font-family: 'Fira Sans', Arial, sans-serif;
     font-size: 16px;
     font-weight: 400;
-    line-height: 1.65;
+    line-height: 1.5;
     color: #222
   }
   heading {
-    font-family: 'Titillium Web', Verdana, Helvetica, sans-serif;
+    font-family: 'Fira Sans', Arial, sans-serif;
     font-size: 19px;
     font-weight: 1000
   }
   strong {
-    font-family: 'Titillium Web', Verdana, Helvetica, sans-serif;
-    font-size: 16px;
+    font-family: 'Fira Sans', Arial, sans-serif;
+    font-size: 14px;
     font-weight: 800
   }
   strongred {
-    font-family: 'Titillium Web', Verdana, Helvetica, sans-serif;
+    font-family: 'Fira Sans', Arial, sans-serif;
     color: 'red' ;
     font-size: 16px
   }
   sectionheading {
-    font-family: 'Titillium Web', Verdana, Helvetica, sans-serif;
+    font-family: 'Fira Sans', Arial, sans-serif;
     font-size: 22px;
     font-weight: 600
   }
   pageheading {
-    font-family: 'Titillium Web', Verdana, Helvetica, sans-serif;
+    font-family: 'Fira Sans', Arial, sans-serif;
     font-size: 38px;
     font-weight: 400
   }
@@ -63,11 +68,12 @@
 
   /* Global rhythm and spacing */
   p { margin: 0 0 var(--space-m); }
-  h2 { margin: var(--space-xl) 0 var(--space-m); font-weight: 700; line-height: 1.3; }
+  /* 标题字号调大一些，让风格更接近 qinren 页面 */
+  h2 { margin: var(--space-xl) 0 var(--space-m); font-weight: 700; line-height: 1.3; font-size: 1.6rem; }
   heading, sectionheading, pageheading { display: block; }
-  heading { margin: var(--space-s) 0 var(--space-xs); line-height: 1.35; }
-  sectionheading { margin: var(--space-l) 0 var(--space-s); line-height: 1.4; }
-  pageheading { margin: var(--space-l) 0 var(--space-s); line-height: 1.2; }
+  heading { margin: var(--space-s) 0 var(--space-xs); line-height: 1.35; font-size: 1.6rem; }
+  sectionheading { margin: var(--space-l) 0 var(--space-s); line-height: 1.4; font-size: 1.8rem; }
+  pageheading { margin: var(--space-l) 0 var(--space-s); line-height: 1.2; font-size: 2.8rem; }
   ul { margin: 0 0 var(--space-m) 20px; }
   ul.other-interests li { margin-bottom: 6px; }
 
@@ -106,7 +112,7 @@
   #pubs td:nth-child(2) { width: 68% !important; }
 
   /* Tighter spacing between title and authors in publications */
-  #pubs heading { margin: 0 0 0px; }
+  #pubs heading { margin: 0 0 0px; font-size: 1.3rem; line-height: 1.3; }
   #pubs heading + br { display: none; }
 
   </style>
@@ -117,7 +123,6 @@
   <script type="text/javascript" src="js/hidebib.js"></script>
   <title>Tiansheng Wen</title>
   <meta name="Tiansheng Wen's Homepage" http-equiv="Content-Type" content="Tiansheng Wen's Homepage">
-  <link href='https://fonts.googleapis.com/css?family=Titillium+Web:400,600,400italic,600italic,300,300italic' rel='stylesheet' type='text/css'>
   <script src="js/scramble.js"></script>
 </head>
 
@@ -148,19 +153,19 @@
     </td>
 
     <td width="62%" valign="top" align="justify">
-        <p>
-            Howdy! Welcome to my home page.👋
-            I am a third-year M.S. student at Xidian University, advised by Prof. <a href="https://web.xidian.edu.cn/bchen/">Bo Chen</a>. 
-            Currently, I am a Research Intern at Stony Brook University, working with Prof. <a href="https://chenyuyou.me/">Chenyu You</a>. 
+        <div class="profile-text">
+            <p>Howdy! Welcome to my home page.👋
+            I am Tiansheng Wen, a final-year M.S. student at Xidian University, advised by Prof. <a href="https://web.xidian.edu.cn/bchen/">Bo Chen</a>. 
+            </p>
+            <p>Currently, I am a Research Intern at Stony Brook University, working with Prof. <a href="https://chenyuyou.me/">Chenyu You</a>. 
             Also, I work closely with Prof. <a href="https://people.csail.mit.edu/stefje/">Stefanie Jegelka</a> and <a href="https://yifeiwang77.com/">Yifei Wang</a> on developing efficient and scalable sparse methods.
-            Prior to my graduate studies, I received my B.S. degree from Xidian University in 2023.
-            <br>
-        <br>
-        <h2>🔥 I am seeking for PhD position in 26Fall in US.</h2>
+            </p>
+            <!-- Prior to my graduate studies, I received my B.S. degree from Xidian University in 2023. -->
+        <h2>🔥 I am seeking for PhD position in 26Fall.</h2>
         Please feel free to reach out to me via email if you believe I am a good fit for your research team.
         I welcome the opportunity for further discussion! Please see my
         <a href="data/CV_3_9.pdf">CV</a> for more details.
-        </p>
+        </div>
 
         </td>
 
@@ -181,17 +186,17 @@
 <!--                              <img src="./img/wechat_qr.png" alt="WeChat QR Code">-->
                   </a>
               </p>
-    
-<div class="news-box">
-    <sectionheading>&nbsp;🚀🚀 News</sectionheading>
+
+              <h2>&nbsp;&nbsp;News</h2>
+<div class="service-list news-list">
       <ul>
-      <li> [10/2025] Join <a href="https://bytedancebandai.notion.site/intro"> ByteDance Bandai</a> as a Research Intern, targeting Deep Research!⚡️️⚡️  </li>  
-      <li> [07/2025] The wait is over! <a href="https://arxiv.org/abs/2503.01776">CSR</a> is now available in  <a href="https://huggingface.co/blog/train-sparse-encoder">Sentence-Transformer v5.0!</a> 🤗🤗</li>  
-      <li> [05/2025] Our paper <a href="https://arxiv.org/abs/2503.01776">CSR</a> has been accepted at ICML 2025 <font color="red">(Oral)</font>! 🎉🎉 </li>
-      <li> [03/2025] Our recent work <a href="https://arxiv.org/abs/2503.01776">Beyond Matryoshka: Revisiting Sparse Coding for Adaptive Representation</a> has <a href="https://x.com/yifeiwang77/status/1897023662328611062">generated considerable interest</a> as a promising alternative approach for efficient embedding retrieval, 
+      <li><strong>[10/2025]</strong> Join <a href="https://bytedancebandai.notion.site/intro"> ByteDance Bandai</a> as a Research Intern, targeting Deep Research!⚡️️⚡️  </li>  
+      <li><strong>[07/2025]</strong> The wait is over! <a href="https://arxiv.org/abs/2503.01776">CSR</a> is now available in  <a href="https://huggingface.co/blog/train-sparse-encoder">Sentence-Transformer v5.0!</a> 🤗🤗</li>  
+      <li><strong>[05/2025]</strong> Our paper <a href="https://arxiv.org/abs/2503.01776">CSR</a> has been accepted at ICML 2025 <font color="red">(Oral)</font>! 🎉🎉 </li>
+      <li><strong>[03/2025]</strong> Our recent work <a href="https://arxiv.org/abs/2503.01776">Contrastive Sparse Representation</a> has <a href="https://x.com/yifeiwang77/status/1897023662328611062">generated considerable interest</a> as a promising alternative approach for efficient embedding retrieval, 
         and we have been invited to publish the model on Hugging Face and Sentence-Transformer! Code available at <a href="https://github.com/neilwen987/CSR_Adaptive_Rep">Link</a>. 🤗🤗</li>
-      <li> [02/2025] Our paper <a href="https://arxiv.org/abs/2503.18483">LanCE</a> has been accepted at CVPR 2025! 🎉🎉 </li>
-      <li> [07/2024] Our paper <a href="https://arxiv.org/abs/2407.18589">HICE-Score</a> accepted by ACM MM 2024! 🎉🎉</li>
+      <li><strong>[02/2025]</strong> Our paper <a href="https://arxiv.org/abs/2503.18483">LanCE</a> has been accepted at CVPR 2025! 🎉🎉 </li>
+      <li><strong>[07/2024]</strong> Our paper <a href="https://arxiv.org/abs/2407.18589">HICE-Score</a> accepted by ACM MM 2024! 🎉🎉</li>
       </ul>
 </div>
     
@@ -211,28 +216,25 @@
         </a>
     </td>
 
-    <td width="70%" valign="top">
+    <td width="60%" valign="top">
         <p>
-            <a href="https://arxiv.org/abs/2503.01776">
-            <heading>Beyond Matryoshka: Revisiting Sparse Coding for Adaptive Representation</heading></a>
-            <b>Tiansheng Wen<sup>*</sup></b>,
-             <a href="https://yifeiwang77.com/" target="_blank">Yifei Wang<sup>*</sup></a>,
-              <a href="https://joeyz0z.github.io/" target="_blank">Zequn Zeng</a>,
-              Zhong Peng,
-              Yudi Su,
-              <a href="https://xinyangatk.github.io/" target="_blank">Xinyang Liu</a>,
-              <a href="https://web.xidian.edu.cn/bchen/en/index.html" target="_blank">Bo Chen</a>,
-              Hongwei Liu,
-              <a href="https://people.csail.mit.edu/stefje/" target="_blank">Stefanie Jegelka</a>,
-              <a href="https://chenyuyou.me/" target="_blank">Chenyu You</a>
-            <br>
-            <em>ICML </em>2025, <b><font color="red">Oral Presentation</font></b> 
+          <papertitle>
+            <a href="https://arxiv.org/abs/2503.01776">Beyond Matryoshka: Revisiting Sparse Coding for Adaptive Representation</a>
+          </papertitle>
+            <div class="paper-info">
+              <strong>Tiansheng Wen<sup>*</sup></strong>, Yifei Wang<sup>*</sup>, Zequn Zeng, Zhong Peng, Yudi Su Xinyang Liu,Bo Chen, Hongwei Liu, Stefanie Jegelka, Chenyu You
+            </div>
+            <div class="paper-info">
+              <span style="padding: 4px 8px; background: #e0e7ff; color: #3730a3; border-radius: 12px; font-size: 0.85rem; font-weight: 600; border: 1px solid #c7d2fe;">ICML 2025</span>
+              <span style="padding: 4px 8px; background: #fef3c7; color: #92400e; border-radius: 12px; font-size: 0.85rem; font-weight: 600; border: 1px solid #fde68a;">Oral Presentation</span>  
+            </div>
+            <!-- <b><font color="red">Oral Presentation</font></b>  -->
         </p>
         <div class="paper" id="csr">
-        <a href="javascript:toggleblock('CSR_abs')">abstract</a> |
-        <a href="https://arxiv.org/abs/2503.01776">paper</a> |
-        <a href="https://huggingface.co/blog/train-sparse-encoder">Sentence-Transformer Blog</a> |
-        <a href="https://github.com/neilwen987/CSR_Adaptive_Rep">code</a> 
+        <a href="javascript:toggleblock('CSR_abs')", class="big-link">abstract</a> |
+        <a href="https://arxiv.org/abs/2503.01776", class="big-link">paper</a> |
+        <a href="https://huggingface.co/blog/train-sparse-encoder", class="big-link">Sentence-Transformer Blog</a> |
+        <a href="https://github.com/neilwen987/CSR_Adaptive_Rep", class="big-link">code</a> 
         <a href="https://github.com/neilwen987/CSR_Adaptive_Rep" target="_blank">
           <img
             src="https://img.shields.io/github/stars/neilwen987/CSR_Adaptive_Rep?style=social"
@@ -277,25 +279,20 @@
 
     <td width="70%" valign="top">
         <p>
-            <a href="https://arxiv.org/abs/2511.06494">
-            <heading>Route Experts by Sequence, not by Token</heading></a>
-            <b>Tiansheng Wen<sup>*</sup></b>,
-             <a href="https://yifeiwang77.com/" target="_blank">Yifei Wang<sup>*</sup></a>,
-             <a href="https://scholar.google.com/citations?user=hFhhrmgAAAAJ&hl=en" target="_blank">Aosong Feng</a>,
-              Long Ma,
-              <a href="https://xinyangatk.github.io/" target="_blank">Xinyang Liu</a>,
-              <a href="https://yfwang.me/" target="_blank">Yifan Wang</a>,
-              <a href="https://veritas2024.github.io/" target="_blank">Lixuan Guo</a>,
-              <a href="https://web.xidian.edu.cn/bchen/en/index.html" target="_blank">Bo Chen</a>,
-              <a href="https://people.csail.mit.edu/stefje/" target="_blank">Stefanie Jegelka</a>,
-              <a href="https://chenyuyou.me/" target="_blank">Chenyu You</a>
-            <br>
-            <em>Arxiv </em>2025 
+          <papertitle>
+            <a href="https://arxiv.org/abs/2511.06494">Route Experts by Sequence, not by Token</a>
+          </papertitle>
+          <div class="paper-info">
+            <strong>Tiansheng Wen<sup>*</sup></strong>, Yifei Wang<sup>*</sup>, Aosong Feng, Long Ma, Xinyang Liu, Yifan Wang, Lixuan Guo, Bo Chen, Stefanie Jegelka, Chenyu You
+          </div>
+            <div class="paper-info">
+              <span style="padding: 4px 8px; background: #f3f4f6; color: #4b5563; border-radius: 12px; font-size: 0.85rem; font-weight: 600; border: 1px solid #d1d5db;">Preprint 2025</span>  
+            </div>
         </p>
         <div class="paper" id="seqtopk">
-        <a href="javascript:toggleblock('seqtopk_abs')">abstract</a> |
-        <a href="https://arxiv.org/abs/2511.06494">paper</a> |
-        <a href="https://github.com/Y-Research-SBU/SeqTopK">code</a> 
+        <a href="javascript:toggleblock('seqtopk_abs')", class="big-link">abstract</a> |
+        <a href="https://arxiv.org/abs/2511.06494", class="big-link">paper</a> |
+        <a href="https://github.com/Y-Research-SBU/SeqTopK", class="big-link">code</a> 
 
         <p align="justify">
             <i id="seqtopk_abs">
@@ -333,23 +330,20 @@
 
     <td width="70%" valign="top">
         <p>
-            <a href="https://arxiv.org/abs/2503.01776">
-            <heading>CSRV2: Unlocking Ultra-Sparse Embeddings </heading></a>
-            <a href="https://veritas2024.github.io/" target="_blank">Lixuan Guo<sup>*</sup></a>,
-             <a href="https://yifeiwang77.com/" target="_blank">Yifei Wang<sup>*</sup></a>,
-             <b>Tiansheng Wen<sup>*</sup></b>,
-             <a href="https://yfwang.me/" target="_blank">Yifan Wang</a>,
-             <a href="https://scholar.google.com/citations?user=hFhhrmgAAAAJ&hl=en" target="_blank">Aosong Feng</a>,
-              <a href="https://web.xidian.edu.cn/bchen/en/index.html" target="_blank">Bo Chen</a>,
-              <a href="https://people.csail.mit.edu/stefje/" target="_blank">Stefanie Jegelka</a>,
-              <a href="https://chenyuyou.me/" target="_blank">Chenyu You</a>
-            <br>
-            <em>Arxiv </em>2025 
+          <papertitle>
+            <a href="https://arxiv.org/abs/2503.01776">CSRV2: Unlocking Ultra-Sparse Embeddings</a>
+          </papertitle>
+          <div class="paper-info">
+            Lixuan Guo<sup>*</sup>, Yifei Wang<sup>*</sup>, <strong>Tiansheng Wen<sup>*</sup></strong>, Yifan Wang, Aosong Feng, Bo Chen, Stefanie Jegelka, Chenyu You
+          </div>
+            <div class="paper-info">
+              <span style="padding: 4px 8px; background: #f3f4f6; color: #4b5563; border-radius: 12px; font-size: 0.85rem; font-weight: 600; border: 1px solid #d1d5db;">Preprint 2025</span>  
+            </div> 
         </p>
         <div class="paper" id="csrv2">
-        <a href="javascript:toggleblock('csrv2_abs')">abstract</a> |
-        <a href="https://arxiv.org/abs/2503.01776">paper</a> |
-        <a href="https://github.com/Y-Research-SBU/CSRv2/tree/main">code</a> 
+        <a href="javascript:toggleblock('csrv2_abs')", class="big-link">abstract</a> |
+        <a href="https://arxiv.org/abs/2503.01776", class="big-link">paper</a> |
+        <a href="https://github.com/Y-Research-SBU/CSRv2/tree/main", class="big-link">code</a> 
 
         <p align="justify">
             <i id="csrv2_abs">
@@ -383,27 +377,21 @@
 
     <td width="70%" valign="top">
         <p>
-            <a href="https://arxiv.org/abs/2503.18483">
-
-            <heading>Explaining Domain Shifts in Language: Concept erasing for Interpretable Image Classification
-</heading></a>
-            <a href="https://joeyz0z.github.io/" target="_blank">Zequn Zeng*</a>,
-            Yudi Su*,
-            Jianqiao Sun,
-            <b>Tiansheng Wen</b>,
-            Hao Zhang,
-            Zhengjue Wang,
-            <a href="https://web.xidian.edu.cn/bchen/en/index.html" target="_blank">Bo Chen</a>,
-            Hongwei Liu,
-            <a href="https://www.cs.cityu.edu.hk/~jiaweima/" target="_blank">Jiawei Ma</a>
-            <br>
-            <em>CVPR</em> 2025
+          <papertitle>
+            <a href="https://arxiv.org/abs/2503.18483">Explaining Domain Shifts in Language: Concept erasing for Interpretable Image Classification</a>
+          </papertitle>
+          <div class="paper-info">
+            Zequn Zeng<sup>*</sup>, Yudi Su<sup>*</sup>, Jianqiao Sun,<strong> Tiansheng Wen</strong>, Hao Zhang, Zhengjue Wang, Bo Chen, Hongwei Liu, Jiawei Ma
+            <div class="paper-info">
+              <span style="padding: 4px 8px; background: #e0e7ff; color: #3730a3; border-radius: 12px; font-size: 0.85rem; font-weight: 600; border: 1px solid #c7d2fe;">CVPR 2025</span> 
+            </div>
+          </div>
         </p>
 
         <div class="paper" id="eegformer">
-        <a href="javascript:toggleblock('lance_abs')">abstract</a> |
-        <a href="https://arxiv.org/abs/2503.18483">paper</a> |
-        <a href="https://github.com/joeyz0z/LanCE">code</a> 
+        <a href="javascript:toggleblock('lance_abs')">abstract,class="big-link" </a> |
+        <a href="https://arxiv.org/abs/2503.18483", class="big-link">paper</a> |
+        <a href="https://github.com/joeyz0z/LanCE", class="big-link">code</a> 
         <a href="https://github.com/joeyz0z/LanCE" target="_blank">
           <img
             src="https://img.shields.io/github/stars/joeyz0z/LanCE?style=social"
@@ -446,22 +434,21 @@
 
     <td width="70%" valign="top">
         <p>
-            <a href="https://arxiv.org/abs/2407.21740">
-
-            <heading>Contrastive Factor Analysis</heading></a>
-            Zhibin Duan<sup>*</sup>,
-            <b>Tiansheng Wen<sup>*</sup></b>,
-            <a href="https://yifeiwang77.com/" target="_blank">Yifei Wang</a>,
-            Chen Zhu,
-            <a href="https://web.xidian.edu.cn/bchen/en/index.html" target="_blank">Bo Chen</a>,
-            <a href="https://mingyuanzhou.github.io/" target="_blank">Mingyuan Zhou</a>,
-            <br>
-            <!-- <em>arXiv</em> --> TPAMI (Under Review)
+          <papertitle>
+            <a href="https://arxiv.org/abs/2407.21740">Contrastive Factor Analysis</a>
+          </papertitle>
+          <div class="paper-info">
+            Zhibin Duan<sup>*</sup>, <strong>Tiansheng Wen<sup>*</sup></strong>, Yifei Wang, Chen Zhu, Bo Chen, Mingyuan Zhou
+          </div>
+            <div class="paper-info">
+              <span style="padding: 4px 8px; background: #f3f4f6; color: #4b5563; border-radius: 12px; font-size: 0.85rem; font-weight: 600; border: 1px solid #d1d5db;">Preprint 2024</span>  
+            </div>
+            <!-- <em>arXiv</em> / TPAMI (Under Review) -->
         </p>
 
         <div class="paper" id="eegformer">
-        <a href="javascript:toggleblock('cfa_abs')">abstract</a> |
-        <a href="https://arxiv.org/abs/2401.10278">paper</a> 
+        <a href="javascript:toggleblock('cfa_abs')">abstract, class="big-link"</a> |
+        <a href="https://arxiv.org/abs/2401.10278", class="big-link">paper</a> 
 
         <p align="justify">
             <i id="cfa_abs">
@@ -502,26 +489,22 @@
 
     <td width="70%" valign="top">
         <p>
-            <a href="https://dl.acm.org/doi/abs/10.1145/3664647.3681358">
-
-            <heading>HICEScore: A Hierarchical Metric for Image Captioning Evaluation</heading></a>
-            <a href="https://joeyz0z.github.io/" target="_blank">Zequn Zeng*</a>,
-            Jianqiao Sun,
-            Hao Zhang,
-            <b>Tiansheng Wen</b>,
-            Yudi Su,
-            Yan Xie,
-            Zhengjue Wang,
-            <a href="https://web.xidian.edu.cn/bchen/en/index.html" target="_blank">Bo Chen</a>,
-            <br>
-            <em>ACM MM</em> 2024
+          <papertitle>
+            <a href="https://dl.acm.org/doi/abs/10.1145/3664647.3681358">HICEScore: A Hierarchical Metric for Image Captioning Evaluation</a>
+          </papertitle>
+          <div class="paper-info">
+            Zequn Zeng, Jianqiao Sun, Hao Zhang, <strong>Tiansheng Wen</strong>, Yudi Su, Yan Xie, Zhengjue Wang, Bo Chen
+          </div>
+            <div class="paper-info">
+              <span style="padding: 4px 8px; background: #e0e7ff; color: #3730a3; border-radius: 12px; font-size: 0.85rem; font-weight: 600; border: 1px solid #c7d2fe;">ACM MM 2024</span> 
+            </div>
         </p>
 
         <div class="paper" id="Veatic">
 <!--        <a href="https://veatic.github.io/">webpage</a> |-->
-        <a href="javascript:toggleblock('hice_abs')">abstract</a> |
-        <a href="https://dl.acm.org/doi/abs/10.1145/3664647.3681358">paper</a> |
-        <a href="https://github.com/joeyz0z/HICE">code</a> 
+        <a href="javascript:toggleblock('hice_abs')", class="big-link">abstract</a> |
+        <a href="https://dl.acm.org/doi/abs/10.1145/3664647.3681358", class="big-link">paper</a> |
+        <a href="https://github.com/joeyz0z/HICE", class="big-link">code</a> 
         <a href="https://github.com/joeyz0z/HICE" target="_blank">
           <img
             src="https://img.shields.io/github/stars/joeyz0z/HICE?style=social"
@@ -553,23 +536,22 @@ Image captioning evaluation metrics can be divided into two categories, referenc
 
     <td width="70%" valign="top">
         <p>
-            <a href="https://arxiv.org/abs/2408.03388">
-
-            <heading>A Non-negative VAE: the Generalized Gamma Belief Network</heading></a>
-            
-            Zhibin Duan,
-            <b>Tiansheng Wen</b>,
-            Muyao Wang,
-            <a href="https://web.xidian.edu.cn/bchen/en/index.html" target="_blank">Bo Chen</a>,
-            <a href="https://mingyuanzhou.github.io/" target="_blank">Mingyuan Zhou</a>
-            <br>
-            <!-- <em>arXiv</em> --> TPAMI (Under Review)
+          <papertitle>
+            <a href="https://arxiv.org/abs/2408.03388">A Non-negative VAE: the Generalized Gamma Belief Network</a>
+          </papertitle>
+          <div class="paper-info">
+            Zhibin Duan, <strong>Tiansheng Wen</strong>, Muyao Wang, Bo Chen, Mingyuan Zhou
+          </div>
+            <div class="paper-info">
+              <span style="padding: 4px 8px; background: #f3f4f6; color: #4b5563; border-radius: 12px; font-size: 0.85rem; font-weight: 600; border: 1px solid #d1d5db;">Preprint 2024</span>  
+            </div>
+            <!-- <em>arXiv</em> / TPAMI (Major Revision) -->
         </p>
 
         <div class="paper" id="Veatic">
 <!--        <a href="https://veatic.github.io/">webpage</a> |-->
-        <a href="javascript:toggleblock('gammavae_abs')">abstract</a> |
-        <a href="https://arxiv.org/abs/2408.03388">paper</a> 
+        <a href="javascript:toggleblock('gammavae_abs')", class="big-link">abstract</a> |
+        <a href="https://arxiv.org/abs/2408.03388", class="big-link">paper</a> 
 <!--        <a href="https://github.com/joeyz0z/HICE">code</a> |-->
 
         <p align="justify">
