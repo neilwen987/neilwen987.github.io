@@ -292,3 +292,14 @@ papertitle a:hover {
   font-size: 15px;
   /* font-weight: 500; */
 }
+.content-section p,
+.content-section li {
+  font-size: 16px;  /* 段落和列表文字一起变大 */
+}
+.content-section {
+  padding: 10px 10px 5px 30px;
+} 
+
+.content-section > heading:first-child {
+  margin-top: 5px;
+}
