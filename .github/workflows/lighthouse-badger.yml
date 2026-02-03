@@ -44,12 +44,32 @@ jobs:
           BRANCH=`expr "${{ env.REPO_BRANCH }}" : ".* \([^ ]*\)"`
           echo "REPOSITORY=$REPOSITORY" >> $GITHUB_ENV
           echo "BRANCH=$BRANCH" >> $GITHUB_ENV
+          # Check if repository is the current repository
+          if [ "$REPOSITORY" = "${{ github.repository }}" ]; then
+            echo "IS_CURRENT_REPO=true" >> $GITHUB_ENV
+          else
+            echo "IS_CURRENT_REPO=false" >> $GITHUB_ENV
+          fi
         env:
           REPO_BRANCH: ${{ env.REPO_BRANCH }}
-      - uses: actions/checkout@v4
+      - name: Checkout target repository (current repo)
+        if: env.IS_CURRENT_REPO == 'true'
+        uses: actions/checkout@v4
+        with:
+          ref: ${{ env.BRANCH }}
+      - name: Checkout target repository (external repo with custom token)
+        if: env.IS_CURRENT_REPO != 'true' && secrets.LIGHTHOUSE_BADGER_TOKEN != ''
+        uses: actions/checkout@v4
         with:
           repository: ${{ env.REPOSITORY }}
           token: ${{ secrets.LIGHTHOUSE_BADGER_TOKEN }}
+          ref: ${{ env.BRANCH }}
+      - name: Checkout target repository (external repo with default token)
+        if: env.IS_CURRENT_REPO != 'true' && secrets.LIGHTHOUSE_BADGER_TOKEN == ''
+        uses: actions/checkout@v4
+        with:
+          repository: ${{ env.REPOSITORY }}
+          token: ${{ secrets.GITHUB_TOKEN }}
           ref: ${{ env.BRANCH }}
       - uses: actions/checkout@v4
         with:
