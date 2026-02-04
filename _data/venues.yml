@@ -9,7 +9,7 @@
   color: "#009f36"
 
 "Preprint":
-  color: "#808080"
+  color: "#CCCCD6"
 
 "arXiv":
   url: https://arxiv.org/
@@ -17,4 +17,20 @@
 
 "ICML":
   url: https://icml.cc/
+  color: "#86BBC7"
+
+"ICLR":
+  url: https://iclr.cc/
+  color: "#86BBC7"
+
+"CVPR":
+  url: https://cvpr.thecvf.com/
+  color: "#86BBC7"
+
+"ACM MM":
+  url: https://www.acmmm.org/
+  color: "#86BBC7"
+
+"NeurIPS":
+  url: https://nips.cc/
   color: "#86BBC7"
