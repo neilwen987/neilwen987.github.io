@@ -14,3 +14,7 @@
 "arXiv":
   url: https://arxiv.org/
   color: "#808080"
+
+"ICML":
+  url: https://icml.cc/
+  color: "#86BBC7"
