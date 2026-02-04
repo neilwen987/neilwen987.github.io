@@ -11,6 +11,9 @@
 "Preprint":
   color: "#CCCCD6"
 
+"Oral":
+  color: "#E6909B"
+
 "arXiv":
   url: "https://arxiv.org/"
   color: "#808080"
