@@ -1,12 +1,12 @@
 metadata:
-  last_updated: '2026-02-04'
+  last_updated: '2026-02-16'
 papers:
   mrdyOyQAAAAJ:2osOgNQ5qMEC:
     citations: 2
     title: Contrastive Factor Analysis
     year: '2024'
   mrdyOyQAAAAJ:IjCSPb-OGe4C:
-    citations: 14
+    citations: 15
     title: 'Beyond Matryoshka: Revisiting Sparse Coding for Adaptive Representation'
     year: '2025'
   mrdyOyQAAAAJ:Tyk-4Ss8FVUC:
@@ -14,13 +14,17 @@ papers:
     title: 'Explaining Domain Shifts in Language: Concept erasing for Interpretable Image Classification'
     year: '2025'
   mrdyOyQAAAAJ:UeHWp8X0CEIC:
-    citations: 11
+    citations: 12
     title: 'HICEScore: A Hierarchical Metric for Image Captioning Evaluation'
     year: '2024'
   mrdyOyQAAAAJ:W7OEmFMy1HYC:
     citations: 1
     title: Route Experts by Sequence, not by Token
     year: '2025'
+  mrdyOyQAAAAJ:eQOLeE2rZwMC:
+    citations: 0
+    title: 'CSRv2: Unlocking Ultra-Sparse Embeddings'
+    year: '2026'
   mrdyOyQAAAAJ:qjMakFHDy7sC:
     citations: 2
     title: 'A non-negative vae: the generalized gamma belief network'
