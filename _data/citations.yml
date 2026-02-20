@@ -1,12 +1,12 @@
 metadata:
-  last_updated: '2026-02-16'
+  last_updated: '2026-02-20'
 papers:
   mrdyOyQAAAAJ:2osOgNQ5qMEC:
     citations: 2
     title: Contrastive Factor Analysis
     year: '2024'
   mrdyOyQAAAAJ:IjCSPb-OGe4C:
-    citations: 15
+    citations: 17
     title: 'Beyond Matryoshka: Revisiting Sparse Coding for Adaptive Representation'
     year: '2025'
   mrdyOyQAAAAJ:Tyk-4Ss8FVUC:
@@ -21,6 +21,10 @@ papers:
     citations: 1
     title: Route Experts by Sequence, not by Token
     year: '2025'
+  mrdyOyQAAAAJ:WF5omc3nYNoC:
+    citations: 0
+    title: 'The Chosen Few: Sparse Adaptation for Large Models'
+    year: Unknown Year
   mrdyOyQAAAAJ:eQOLeE2rZwMC:
     citations: 0
     title: 'CSRv2: Unlocking Ultra-Sparse Embeddings'
