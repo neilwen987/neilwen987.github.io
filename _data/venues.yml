@@ -12,7 +12,7 @@
   color: "#b8b0a6"
 
 "Oral":
-  color: "#c0392b"
+  color: "#c05621"
 
 "arXiv":
   url: "https://arxiv.org/"
@@ -20,24 +20,24 @@
 
 "ICML":
   url: "https://icml.cc/"
-  color: "#c05621"
+  color: "#4a90b8"
 
 "ICLR":
   url: "https://iclr.cc/"
-  color: "#c05621"
+  color: "#4a90b8"
 
 "CVPR":
   url: "https://cvpr.thecvf.com/"
-  color: "#6b705c"
+  color: "#b87333"
 
 "ACM MM":
   url: "https://www.acmmm.org/"
-  color: "#6b705c"
+  color: "#b87333"
 
 "NeurIPS":
   url: "https://nips.cc/"
-  color: "#c05621"
+  color: "#4a90b8"
 
 "TCSVT":
   url: "https://ieeexplore.ieee.org/xpl/RecentIssue.jsp?punumber=76"
-  color: "#6b705c"
+  color: "#b87333"

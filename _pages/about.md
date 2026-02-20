@@ -7,10 +7,10 @@ permalink: /
 profile:
   align: right
   image: prof_pic.jpg
-  image_circular: false # crops the image to make it circular
+  image_circular: true # crops the image to make it circular
   more_info: >
-    <p style="font-size: 0.85rem; font-style: italic; color:rgb(151, 148, 148);">There is a crack in everything, </p>
-    <p style="font-size: 0.85rem; font-style: italic; color:rgb(151, 148, 148);">that's how the light gets in.✨</p>
+    <p style="font-size: 0.85rem; font-style: italic; color: #a89884;">There is a crack in everything, </p>
+    <p style="font-size: 0.85rem; font-style: italic; color: #a89884;">that's how the light gets in.✨</p>
 
 selected_papers: true # includes a list of papers marked as "selected={true}"
 social: true # includes social icons at the bottom of the page
@@ -30,4 +30,4 @@ I am Tiansheng Wen, a Research Intern at [ByteDance-BandAI](https://bytedanceban
 
 I am a final-year M.S. student at Xidian University, advised by [Prof. Bo Chen](https://web.xidian.edu.cn/bchen/en/index.html). Before that, I spent a wonderful year at Stony Brook University, working with [Prof. Chenyu You](https://chenyuyou.me/). I also collaborate closely with [Prof. Stefanie Jegelka](https://people.csail.mit.edu/stefje/) and [Yifei Wang](https://yifeiwang77.com/) on efficient and scalable sparse methods.
 
-**<span style="color: red;">I am actively seeking PhD opportunities for Fall 2026.</span>** If you believe my background aligns with your research group, please feel free to reach out. I would welcome the opportunity for further discussion!
+**<span style="color: #c05621;">I am actively seeking PhD opportunities for Fall 2026.</span>** If you believe my background aligns with your research group, please feel free to reach out. I would welcome the opportunity for further discussion!

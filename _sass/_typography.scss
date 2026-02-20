@@ -4,6 +4,11 @@
 
 @use "variables" as v;
 
+html,
+body {
+  font-family: "Libre Baskerville", Georgia, "Times New Roman", serif;
+}
+
 p,
 h1,
 h2,
