@@ -407,7 +407,7 @@ ninja.data = [{
           section: "News",},{id: "news-our-recent-work-contrastive-sparse-representation-has-generated-considerable-interest-as-a-promising-alternative-approach-for-efficient-embedding-retrieval-and-we-have-been-invited-to-publish-the-model-on-hugging-face-and-sentence-transformer-code-available-at-link",
           title: 'Our recent work Contrastive Sparse Representation has generated considerable interest as a promising...',
           description: "",
-          section: "News",},{id: "news-our-paper-contrastive-sparse-representations-csr-was-selected-for-an-oral-presentation-top-1-csr-compresses-sota-4k-dim-embeddings-to-just-32-active-dimensions-achieving-100-faster-retrieval-for-rag-and-vector-databases-with-minimal-accuracy-loss",
+          section: "News",},{id: "news-our-paper-contrastive-sparse-representations-csr-was-selected-for-an-oral-presentation-top-1-at-icml-2025-csr-compresses-sota-4k-dim-embeddings-to-just-32-active-dimensions-achieving-100-faster-retrieval-for-rag-and-vector-databases-with-minimal-accuracy-loss",
           title: 'Our paper Contrastive Sparse Representations (CSR) was selected for an Oral Presentation (Top...',
           description: "",
           section: "News",},{id: "news-the-wait-is-over-csr-is-now-available-in-sentence-transformer-v5-0",
