@@ -30,4 +30,4 @@ I am Tiansheng Wen, a Research Intern at [ByteDance-BandAI](https://bytedanceban
 
 I am a final-year M.S. student at Xidian University, advised by [Prof. Bo Chen](https://web.xidian.edu.cn/bchen/en/index.html). Before that, I spent a wonderful year at Stony Brook University, working with [Prof. Chenyu You](https://chenyuyou.me/). I also collaborate closely with [Prof. Stefanie Jegelka](https://people.csail.mit.edu/stefje/) and [Yifei Wang](https://yifeiwang77.com/) on efficient and scalable sparse methods.
 
-**<span style="color: #c05621;">I am actively seeking PhD opportunities for Fall 2026.</span>** If you believe my background aligns with your research group, please feel free to reach out. I would welcome the opportunity for further discussion!
+**<span style="color: #dc143c;">I am actively seeking PhD opportunities for Fall 2026.</span>** If you believe my background aligns with your research group, please feel free to reach out. I would welcome the opportunity for further discussion!
