@@ -28,6 +28,6 @@ latest_posts:
 
 I am Tiansheng Wen, a Research Intern at [ByteDance-BandAI](https://bytedancebandai.notion.site/intro). My research focuses on enhancing the scalability and reliability of LLMs through structural and post-training sparsity, empowering agents to tackle complex real-world tasks like coding efficiently without compromising general performance.
 
-I am a final-year M.S. student at Xidian University, advised by [Prof. Bo Chen](https://web.xidian.edu.cn/bchen/en/index.html). Before that, I spent a wonderful year at Stony Brook University, working with [Prof. Chenyu You](https://chenyuyou.me/). I also collaborate closely with [Prof. Stefanie Jegelka](https://people.csail.mit.edu/stefje/) and [Yifei Wang](https://yifeiwang77.com/) on efficient and scalable sparse methods.
+I am a final-year M.S. student at Xidian University, advised by [Prof. Bo Chen](https://web.xidian.edu.cn/bchen/en/index.html). Before that, I spent a wonderful year at Stony Brook University, working with <a href="https://chenyuyou.me/" style="white-space: nowrap;">Prof. Chenyu You</a>. I also collaborate closely with [Prof. Stefanie Jegelka](https://people.csail.mit.edu/stefje/) and [Yifei Wang](https://yifeiwang77.com/) on efficient and scalable sparse methods.
 
 **<span style="color: #dc143c;">I am actively seeking PhD opportunities for Fall 2026.</span>** If you believe my background aligns with your research group, please feel free to reach out. I would welcome the opportunity for further discussion!
