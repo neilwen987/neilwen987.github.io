@@ -13,6 +13,7 @@ nav_order: 6
 }
 .post-content a:hover {
   color: #c05621 !important;
+  text-decoration: none !important;
 }
 </style>
 
