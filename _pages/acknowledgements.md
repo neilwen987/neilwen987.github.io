@@ -7,6 +7,15 @@ nav: true
 nav_order: 6
 ---
 
+<style>
+.post-content a {
+  transition: color 0.2s ease;
+}
+.post-content a:hover {
+  color: #c05621 !important;
+}
+</style>
+
 I am deeply grateful to the following people for their mentorship, collaboration, and support throughout my research journey.
 
 ### Advisors & Mentors
@@ -15,7 +24,7 @@ I am deeply grateful to the following people for their mentorship, collaboration
 - [**Prof. Chenyu You**](https://chenyuyou.me/), Stony Brook University
 - [**Prof. Stefanie Jegelka**](https://people.csail.mit.edu/stefje/), MIT
 - [**Prof. Mingyuan Zhou**](https://mingyuanzhou.github.io/), UT Austin
-- [**Kai Jia**](https://scholar.google.com/citations?user=ih3MdzUAAAAJ&hl=en), [ByteDance-BandAI](https://bytedancebandai.notion.site/intro)
+- [**Kai Jia**](https://scholar.google.com/citations?user=ih3MdzUAAAAJ&hl=en), <a href="https://bytedancebandai.notion.site/intro" style="color: inherit; text-decoration: none;">ByteDance-BandAI</a>
 
 ### Close Collaborators
 
