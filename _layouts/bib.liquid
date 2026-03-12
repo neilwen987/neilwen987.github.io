@@ -103,8 +103,10 @@
               {{ author_last_html -}}
             </a>
           {%- else -%}
-            <span style="white-space: nowrap;">{{- author.first }}
-            {{ author_last_html -}}</span>
+            <span style="white-space: nowrap;">
+              {{- author.first }}
+              {{ author_last_html -}}
+            </span>
           {% endif %}
         {%- endif -%}
       {% endfor %}
