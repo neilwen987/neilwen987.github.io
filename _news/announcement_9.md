@@ -5,4 +5,4 @@ inline: true
 related_posts: false
 ---
 
-Life update! I will be joining Georgia Institute of Technology as a PhD student this Fall. Go Jackets! 🐝
+A new chapter begins! Beyond excited to join Georgia Institute of Technology as a PhD student this Fall! Atlanta, I'm coming! Go Jackets! 🐝✨

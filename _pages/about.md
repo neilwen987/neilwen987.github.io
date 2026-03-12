@@ -30,4 +30,4 @@ I am Tiansheng Wen, a Research Intern at [ByteDance-BandAI](https://bytedanceban
 
 I am a final-year M.S. student at Xidian University, advised by [Prof. Bo Chen](https://web.xidian.edu.cn/bchen/en/index.html). I spent a wonderful year at Stony Brook University working with [Prof. Chenyu You](https://chenyuyou.me/). I also collaborate closely with [Prof. Stefanie Jegelka](https://people.csail.mit.edu/stefje/) and [Yifei Wang](https://yifeiwang77.com/) on efficient and scalable sparse methods.
 
-I'm an incoming PhD student at <img src="/assets/img/gt-seal.png" alt="Georgia Tech" style="height: 1.1em; vertical-align: -0.15em;"> Georgia Tech, advised by [Prof. Pan Li](https://sites.google.com/view/panli-purdue/home). I am actively open to research collaboration inquiries. Feel free to reach out!
+I'm an incoming PhD student at Georgia Institute of Technology, advised by [Prof. Pan Li](https://sites.google.com/view/panli-purdue/home). I am actively open to research collaboration inquiries. Feel free to reach out!
