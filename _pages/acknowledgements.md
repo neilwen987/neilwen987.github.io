@@ -21,11 +21,12 @@ I am deeply grateful to the following people for their mentorship, collaboration
 
 ### Advisors & Mentors
 
+- [**Prof. Pan Li**](https://sites.google.com/view/panli-purdue/home), Georgia Institute of Technology
 - [**Prof. Bo Chen**](https://web.xidian.edu.cn/bchen/en/index.html), Xidian University
 - [**Prof. Chenyu You**](https://chenyuyou.me/), Stony Brook University
-- [**Prof. Stefanie Jegelka**](https://people.csail.mit.edu/stefje/), MIT
 - [**Prof. Mingyuan Zhou**](https://mingyuanzhou.github.io/), UT Austin
 - [**Kai Jia**](https://scholar.google.com/citations?user=ih3MdzUAAAAJ&hl=en), <a href="https://bytedancebandai.notion.site/intro" style="color: inherit; text-decoration: none;">ByteDance-BandAI</a>
+- [**Prof. Stefanie Jegelka**](https://people.csail.mit.edu/stefje/), MIT
 
 ### Close Collaborators
 
