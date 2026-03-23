@@ -1,12 +1,12 @@
 metadata:
-  last_updated: '2026-03-18'
+  last_updated: '2026-03-23'
 papers:
   mrdyOyQAAAAJ:2osOgNQ5qMEC:
     citations: 2
     title: Contrastive Factor Analysis
     year: '2024'
   mrdyOyQAAAAJ:IjCSPb-OGe4C:
-    citations: 22
+    citations: 23
     title: 'Beyond Matryoshka: Revisiting Sparse Coding for Adaptive Representation'
     year: '2025'
   mrdyOyQAAAAJ:Tyk-4Ss8FVUC:
@@ -30,7 +30,7 @@ papers:
     title: 'CSRv2: Unlocking Ultra-Sparse Embeddings'
     year: '2026'
   mrdyOyQAAAAJ:qjMakFHDy7sC:
-    citations: 2
+    citations: 3
     title: 'A Non-negative VAE: the Generalized Gamma Belief Network'
     year: '2024'
   mrdyOyQAAAAJ:ufrVoPGSRksC:
