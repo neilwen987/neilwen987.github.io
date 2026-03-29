@@ -41,3 +41,7 @@
 "TCSVT":
   url: "https://ieeexplore.ieee.org/xpl/RecentIssue.jsp?punumber=76"
   color: "#b87333"
+
+"TPAMI":
+  url: "https://www.computer.org/csdl/journal/tp"
+  color: "#b87333"
