@@ -1,5 +1,5 @@
 metadata:
-  last_updated: '2026-03-23'
+  last_updated: '2026-04-13'
 papers:
   mrdyOyQAAAAJ:2osOgNQ5qMEC:
     citations: 2
@@ -9,12 +9,16 @@ papers:
     citations: 23
     title: 'Beyond Matryoshka: Revisiting Sparse Coding for Adaptive Representation'
     year: '2025'
+  mrdyOyQAAAAJ:LkGwnXOMwfcC:
+    citations: 0
+    title: Scaling Attention via Feature Sparsity
+    year: '2026'
   mrdyOyQAAAAJ:Tyk-4Ss8FVUC:
     citations: 2
     title: 'Explaining Domain Shifts in Language: Concept erasing for Interpretable Image Classification'
     year: '2025'
   mrdyOyQAAAAJ:UeHWp8X0CEIC:
-    citations: 12
+    citations: 13
     title: 'HICEScore: A Hierarchical Metric for Image Captioning Evaluation'
     year: '2024'
   mrdyOyQAAAAJ:W7OEmFMy1HYC:
@@ -32,8 +36,4 @@ papers:
   mrdyOyQAAAAJ:qjMakFHDy7sC:
     citations: 3
     title: 'A Non-negative VAE: the Generalized Gamma Belief Network'
-    year: '2024'
-  mrdyOyQAAAAJ:ufrVoPGSRksC:
-    citations: 0
-    title: Scaling Attention via Feature Sparsity
-    year: Unknown Year
+    year: '2026'
