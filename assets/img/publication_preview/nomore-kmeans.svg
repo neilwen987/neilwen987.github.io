@@ -1,0 +1,219 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1120 840" role="img" aria-labelledby="title desc">
+  <title id="title">Single-stage sparse coding for multi-vector retrieval</title>
+  <desc id="desc">A schematic comparing dense multi-vector retrieval with sparse multi-vector retrieval.</desc>
+  <defs>
+    <marker id="arrow" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse">
+      <path d="M 0 0 L 10 5 L 0 10 z" fill="#111" />
+    </marker>
+    <style>
+      .label {
+        font:
+          700 34px -apple-system,
+          BlinkMacSystemFont,
+          "Segoe UI",
+          sans-serif;
+        fill: #111;
+      }
+      .small {
+        font:
+          600 24px -apple-system,
+          BlinkMacSystemFont,
+          "Segoe UI",
+          sans-serif;
+        fill: #111;
+      }
+      .caption {
+        font:
+          700 34px -apple-system,
+          BlinkMacSystemFont,
+          "Segoe UI",
+          sans-serif;
+        fill: #d25149;
+      }
+      .panel-title {
+        font:
+          700 34px -apple-system,
+          BlinkMacSystemFont,
+          "Segoe UI",
+          sans-serif;
+        fill: #111;
+      }
+      .box-text {
+        font:
+          700 30px -apple-system,
+          BlinkMacSystemFont,
+          "Segoe UI",
+          sans-serif;
+        fill: #111;
+      }
+      .math {
+        font:
+          italic 28px Georgia,
+          serif;
+        fill: #111;
+      }
+      .panel {
+        fill: #f1f1ee;
+      }
+      .header {
+        fill: #bcd2cb;
+      }
+      .query {
+        fill: #9a9994;
+      }
+      .query-dark {
+        fill: #686966;
+      }
+      .doc {
+        fill: #d5a47f;
+      }
+      .doc-dark {
+        fill: #cd7659;
+      }
+      .doc-light {
+        fill: #ecdcb9;
+      }
+      .dash {
+        fill: none;
+        stroke: #111;
+        stroke-width: 4;
+        stroke-dasharray: 16 12;
+      }
+      .line {
+        fill: none;
+        stroke: #111;
+        stroke-width: 4;
+        marker-end: url(#arrow);
+      }
+      .plain-line {
+        fill: none;
+        stroke: #111;
+        stroke-width: 4;
+      }
+    </style>
+  </defs>
+
+  <rect width="1120" height="840" fill="#fff" />
+
+  <text x="300" y="58" class="label">Token Dim</text>
+  <path d="M 235 68 H 470" class="line" />
+  <text x="590" y="58" class="label">Token Dim</text>
+  <path d="M 530 68 H 770" class="line" />
+  <text x="70" y="190" class="label" transform="rotate(-90 70 190)">Embed Dim</text>
+  <path d="M 105 82 V 210" class="line" />
+
+  <rect x="126" y="83" width="44" height="44" rx="7" class="query" />
+  <rect x="126" y="134" width="44" height="44" rx="7" fill="#e2e1dc" />
+  <rect x="126" y="185" width="44" height="44" rx="7" fill="#c1c1bd" />
+  <circle cx="235" cy="173" r="5" fill="#111" />
+  <circle cx="255" cy="173" r="5" fill="#111" />
+  <circle cx="275" cy="173" r="5" fill="#111" />
+  <rect x="430" y="83" width="44" height="44" rx="7" class="query-dark" />
+  <rect x="430" y="134" width="44" height="44" rx="7" fill="#babbb6" />
+  <rect x="430" y="185" width="44" height="44" rx="7" class="query" />
+
+  <rect x="530" y="83" width="44" height="44" rx="7" class="doc" />
+  <rect x="530" y="134" width="44" height="44" rx="7" class="doc-dark" />
+  <rect x="530" y="185" width="44" height="44" rx="7" class="doc-light" />
+  <circle cx="640" cy="173" r="5" fill="#111" />
+  <circle cx="660" cy="173" r="5" fill="#111" />
+  <circle cx="680" cy="173" r="5" fill="#111" />
+  <rect x="755" y="83" width="44" height="44" rx="7" class="doc-dark" />
+  <rect x="755" y="134" width="44" height="44" rx="7" class="doc-light" />
+  <rect x="755" y="185" width="44" height="44" rx="7" class="doc-dark" />
+
+  <text x="860" y="120" class="small">query</text>
+  <rect x="946" y="87" width="44" height="44" rx="7" class="query" />
+  <text x="832" y="170" class="small">document</text>
+  <rect x="946" y="137" width="44" height="44" rx="7" class="doc-dark" />
+
+  <path d="M 505 246 L 245 290" class="line" />
+  <path d="M 512 246 L 760 290" class="line" />
+
+  <rect x="24" y="300" width="452" height="520" class="panel" />
+  <rect x="56" y="320" width="388" height="58" rx="10" class="header" />
+  <text x="150" y="358" class="panel-title">Dense Encoder</text>
+  <rect x="64" y="392" width="42" height="42" rx="7" class="query-dark" />
+  <rect x="64" y="444" width="42" height="42" rx="7" fill="#babbb6" />
+  <circle cx="135" cy="444" r="5" fill="#111" />
+  <circle cx="155" cy="444" r="5" fill="#111" />
+  <circle cx="175" cy="444" r="5" fill="#111" />
+  <rect x="205" y="392" width="42" height="42" rx="7" class="query" />
+  <rect x="205" y="444" width="42" height="42" rx="7" class="query-dark" />
+  <rect x="298" y="392" width="42" height="42" rx="7" class="doc-light" />
+  <rect x="298" y="444" width="42" height="42" rx="7" class="doc" />
+  <circle cx="390" cy="444" r="5" fill="#111" />
+  <circle cx="410" cy="444" r="5" fill="#111" />
+  <circle cx="430" cy="444" r="5" fill="#111" />
+  <rect x="420" y="392" width="42" height="42" rx="7" class="doc" />
+  <rect x="420" y="444" width="42" height="42" rx="7" class="doc-dark" />
+  <path d="M 84 486 L 245 590" class="plain-line" />
+  <path d="M 226 486 L 245 590" class="plain-line" />
+  <path d="M 320 486 L 245 590" class="plain-line" />
+  <path d="M 440 486 L 245 590" class="plain-line" />
+  <rect x="125" y="590" width="240" height="76" rx="12" class="header" />
+  <text x="166" y="635" class="box-text">MaxSim+ &#8721;</text>
+  <path d="M 245 670 V 718" class="line" />
+  <rect x="148" y="714" width="190" height="60" rx="10" class="header" />
+  <text x="190" y="752" class="box-text">
+    Score
+    <tspan class="math">
+      s
+      <tspan baseline-shift="sub" font-size="18">q,d</tspan>
+    </tspan>
+  </text>
+  <text x="154" y="815" class="caption">Dense MVR</text>
+
+  <rect x="500" y="300" width="590" height="520" class="panel" />
+  <rect x="560" y="320" width="470" height="58" rx="10" class="header" />
+  <text x="685" y="358" class="panel-title">Sparse Encoder</text>
+  <g transform="translate(595 392)">
+    <rect x="0" y="0" width="42" height="42" rx="7" class="dash" />
+    <rect x="0" y="52" width="42" height="42" rx="7" class="dash" />
+    <rect x="0" y="104" width="42" height="42" rx="7" class="query-dark" />
+    <rect x="0" y="156" width="42" height="42" rx="7" class="dash" />
+    <circle cx="80" cy="104" r="5" fill="#111" />
+    <circle cx="100" cy="104" r="5" fill="#111" />
+    <circle cx="120" cy="104" r="5" fill="#111" />
+    <rect x="135" y="0" width="42" height="42" rx="7" class="dash" />
+    <rect x="135" y="52" width="42" height="42" rx="7" class="dash" />
+    <rect x="135" y="104" width="42" height="42" rx="7" class="dash" />
+    <rect x="135" y="156" width="42" height="42" rx="7" class="query" />
+    <rect x="275" y="0" width="42" height="42" rx="7" class="dash" />
+    <rect x="275" y="52" width="42" height="42" rx="7" class="dash" />
+    <rect x="275" y="104" width="42" height="42" rx="7" class="doc-dark" />
+    <rect x="275" y="156" width="42" height="42" rx="7" class="dash" />
+    <circle cx="352" cy="104" r="5" fill="#111" />
+    <circle cx="372" cy="104" r="5" fill="#111" />
+    <circle cx="392" cy="104" r="5" fill="#111" />
+    <rect x="410" y="0" width="42" height="42" rx="7" class="dash" />
+    <rect x="410" y="52" width="42" height="42" rx="7" class="dash" />
+    <rect x="410" y="104" width="42" height="42" rx="7" class="dash" />
+    <rect x="410" y="156" width="42" height="42" rx="7" class="doc" />
+    <path d="M 21 198 L 200 222" class="plain-line" />
+    <path d="M 156 198 L 200 222" class="plain-line" />
+    <path d="M 296 198 L 310 222" class="plain-line" />
+    <path d="M 431 198 L 310 222" class="plain-line" />
+  </g>
+  <rect x="525" y="590" width="120" height="58" rx="10" class="header" />
+  <rect x="650" y="590" width="120" height="58" rx="10" class="header" />
+  <rect x="775" y="590" width="120" height="58" rx="10" class="header" />
+  <rect x="900" y="590" width="120" height="58" rx="10" class="header" />
+  <text x="556" y="629" class="box-text">id=1</text>
+  <text x="681" y="629" class="box-text">id=2</text>
+  <text x="806" y="629" class="box-text">id=3</text>
+  <text x="931" y="629" class="box-text">id=4</text>
+  <path d="M 585 648 L 735 708" class="plain-line" />
+  <path d="M 710 648 L 735 708" class="plain-line" />
+  <path d="M 835 648 L 735 708" class="plain-line" />
+  <path d="M 945 648 L 735 708" class="plain-line" />
+  <rect x="650" y="706" width="190" height="60" rx="10" class="header" />
+  <text x="700" y="745" class="box-text">
+    Score
+    <tspan class="math">
+      s
+      <tspan baseline-shift="sub" font-size="18">q,d</tspan>
+    </tspan>
+  </text>
+  <text x="662" y="815" class="caption">Sparse MVR</text>
+</svg>
