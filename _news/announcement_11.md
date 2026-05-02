@@ -5,4 +5,4 @@ inline: true
 related_posts: false
 ---
 
-No more K-means! Our paper [Single-Stage Sparse Multi-Vector Retrieval (SSR)](https://openreview.net/pdf?id=pp1enKGv2v) was accepted to ICML 2026, using sparse coding instead of clustering to make multi-vector retrieval faster to index and search while preserving fine-grained retrieval quality. 🎉🎉
+No more K-means! Our paper [Single-Stage Sparse Multi-Vector Retrieval (SSR)](https://openreview.net/pdf?id=pp1enKGv2v) was accepted to ICML 2026, showing how sparse codes can naturally organize token-level matches for faster, fine-grained retrieval without a separate clustering step. 🎉🎉
