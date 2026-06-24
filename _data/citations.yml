@@ -1,37 +1,41 @@
 metadata:
-  last_updated: '2026-04-29'
+  last_updated: '2026-06-24'
 papers:
+  mrdyOyQAAAAJ:0EnyYjriUFMC:
+    citations: 0
+    title: 'CAIR-Net: Reliability-Aware Information Routing for Robust Multimodal Object Detection under Modality Degradation'
+    year: '2026'
   mrdyOyQAAAAJ:2osOgNQ5qMEC:
     citations: 3
     title: Contrastive Factor Analysis
     year: '2024'
   mrdyOyQAAAAJ:IjCSPb-OGe4C:
-    citations: 25
+    citations: 28
     title: 'Beyond Matryoshka: Revisiting Sparse Coding for Adaptive Representation'
     year: '2025'
   mrdyOyQAAAAJ:LkGwnXOMwfcC:
     citations: 0
     title: Scaling Attention via Feature Sparsity
     year: '2026'
-  mrdyOyQAAAAJ:Tyk-4Ss8FVUC:
-    citations: 2
-    title: 'Explaining Domain Shifts in Language: Concept erasing for Interpretable Image Classification'
-    year: '2025'
-  mrdyOyQAAAAJ:UeHWp8X0CEIC:
-    citations: 13
-    title: 'HICEScore: A Hierarchical Metric for Image Captioning Evaluation'
-    year: '2024'
-  mrdyOyQAAAAJ:W7OEmFMy1HYC:
+  mrdyOyQAAAAJ:Se3iqnhoufwC:
     citations: 1
     title: Route Experts by Sequence, not by Token
     year: '2025'
-  mrdyOyQAAAAJ:_FxGoFyzp5QC:
-    citations: 0
-    title: 'CAIR-Net: Reliability-Aware Information Routing for Robust Multimodal Object Detection under Modality Degradation'
-    year: '2026'
+  mrdyOyQAAAAJ:Tyk-4Ss8FVUC:
+    citations: 3
+    title: 'Explaining Domain Shifts in Language: Concept erasing for Interpretable Image Classification'
+    year: '2025'
+  mrdyOyQAAAAJ:UeHWp8X0CEIC:
+    citations: 15
+    title: 'HICEScore: A Hierarchical Metric for Image Captioning Evaluation'
+    year: '2024'
   mrdyOyQAAAAJ:eQOLeE2rZwMC:
     citations: 1
     title: 'CSRv2: Unlocking Ultra-Sparse Embeddings'
+    year: '2026'
+  mrdyOyQAAAAJ:hqOjcs7Dif8C:
+    citations: 0
+    title: 'No More K-means: Single-Stage Sparse Coding for Efficient Multi-Vector Retrieval'
     year: '2026'
   mrdyOyQAAAAJ:roLk4NBRz8UC:
     citations: 4
