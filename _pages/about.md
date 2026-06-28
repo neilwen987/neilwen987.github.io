@@ -7,7 +7,7 @@ permalink: /
 profile:
   align: right
   image: prof_pic.jpg
-  image_circular: true # crops the image to make it circular
+  image_circular: false # crops the image to make it circular
   more_info: >
     <p style="font-size: 0.85rem; font-style: italic; color: #a89884;">There is a crack in everything, </p>
     <p style="font-size: 0.85rem; font-style: italic; color: #a89884;">that's how the light gets in.✨</p>
