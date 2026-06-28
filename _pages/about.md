@@ -26,8 +26,14 @@ latest_posts:
   limit: 3 # leave blank to include all the blog posts
 ---
 
-I am Tiansheng Wen. My research focuses on enhancing the scalability and reliability of LLMs through structural and post-training sparsity, empowering agents to tackle complex real-world tasks like coding efficiently without compromising general performance.
+I am Tiansheng Wen, a first-year Ph.D. student at Georgia Institute of Technology, advised by <a href="https://sites.google.com/view/panli-purdue/home" style="white-space: nowrap;">Prof. Pan Li</a>.
 
-I am a final-year M.S. student at Xidian University, advised by [Prof. Bo Chen](https://web.xidian.edu.cn/bchen/en/index.html). I spent a wonderful year at Stony Brook University working with [Prof. Chenyu You](https://chenyuyou.me/). I also collaborate closely with [Prof. Stefanie Jegelka](https://people.csail.mit.edu/stefje/) and [Yifei Wang](https://yifeiwang77.com/) on efficient and scalable sparse methods.
+My research interests broadly lie in core machine learning, especially sparsity, with applications to large language models and LLM-driven agentic learning. Recently, I have been mainly focusing on:
 
-I'm an incoming PhD student at Georgia Institute of Technology, advised by <a href="https://sites.google.com/view/panli-purdue/home" style="white-space: nowrap;">Prof. Pan Li</a>. I am actively open to research collaboration. Feel free to reach out!
+- Token sparsity in on-policy distillation.
+- Sparse and structured representations for edge-friendly scalable retrieval.
+- Agentic learning for structured data.
+
+Before joining Georgia Tech, I spent seven wonderful years at Xidian University for my B.S. and M.S. degrees, where I was fortunate to be supervised by [Prof. Bo Chen](https://web.xidian.edu.cn/bchen/en/index.html). I also spent an incredible year at Stony Brook University working with [Prof. Chenyu You](https://chenyuyou.me/). I am deeply grateful to my close collaborators, [Prof. Stefanie Jegelka](https://people.csail.mit.edu/stefje/) and [Yifei Wang](https://yifeiwang77.com/), with whom I have worked closely on efficient and scalable sparse methods.
+
+I am actively open to research collaboration. Feel free to reach out!
