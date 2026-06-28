@@ -37,3 +37,5 @@ My research interests broadly lie in core machine learning, especially sparsity,
 Before joining Georgia Tech, I spent seven wonderful years at Xidian University for my B.S. and M.S. degrees, where I was fortunate to be supervised by [Prof. Bo Chen](https://web.xidian.edu.cn/bchen/en/index.html). I also spent an incredible year at Stony Brook University working with [Prof. Chenyu You](https://chenyuyou.me/). I am deeply grateful to my close collaborators, [Prof. Stefanie Jegelka](https://people.csail.mit.edu/stefje/) and [Yifei Wang](https://yifeiwang77.com/), with whom I have worked closely on efficient and scalable sparse methods.
 
 I am actively open to research collaboration. Feel free to reach out!
+
+<!-- rebuild trigger: 2026-06-28 -->
