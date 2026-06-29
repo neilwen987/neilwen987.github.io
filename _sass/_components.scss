@@ -78,6 +78,14 @@ ul.task-list input[type="checkbox"] {
   margin-right: 1rem;
 }
 
+.school-logo {
+  width: 1.25em;
+  height: 1.25em;
+  margin-right: 0.3rem;
+  vertical-align: -0.25em;
+  object-fit: contain;
+}
+
 @media (min-width: 576px) {
   .profile {
     width: 30%;
@@ -87,6 +95,10 @@ ul.task-list input[type="checkbox"] {
         display: block;
       }
     }
+  }
+
+  .about-profile {
+    width: 36%;
   }
 }
 
