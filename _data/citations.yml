@@ -1,5 +1,5 @@
 metadata:
-  last_updated: '2026-06-24'
+  last_updated: '2026-07-01'
 papers:
   mrdyOyQAAAAJ:0EnyYjriUFMC:
     citations: 0
@@ -7,15 +7,19 @@ papers:
     year: '2026'
   mrdyOyQAAAAJ:2osOgNQ5qMEC:
     citations: 3
-    title: Contrastive Factor Analysis
+    title: 'Beyond Spectral Decomposition: Bayesian Contrastive Learning and its Non-negative Formulation via Factor Analysis'
     year: '2024'
   mrdyOyQAAAAJ:IjCSPb-OGe4C:
     citations: 28
     title: 'Beyond Matryoshka: Revisiting Sparse Coding for Adaptive Representation'
     year: '2025'
   mrdyOyQAAAAJ:LkGwnXOMwfcC:
-    citations: 0
+    citations: 1
     title: Scaling Attention via Feature Sparsity
+    year: '2026'
+  mrdyOyQAAAAJ:MXK_kJrjxJIC:
+    citations: 0
+    title: On the Position Bias of On-Policy Distillation
     year: '2026'
   mrdyOyQAAAAJ:Se3iqnhoufwC:
     citations: 1
@@ -26,7 +30,7 @@ papers:
     title: 'Explaining Domain Shifts in Language: Concept erasing for Interpretable Image Classification'
     year: '2025'
   mrdyOyQAAAAJ:UeHWp8X0CEIC:
-    citations: 15
+    citations: 16
     title: 'HICEScore: A Hierarchical Metric for Image Captioning Evaluation'
     year: '2024'
   mrdyOyQAAAAJ:eQOLeE2rZwMC:
