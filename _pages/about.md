@@ -26,7 +26,7 @@ latest_posts:
   limit: 3 # leave blank to include all the blog posts
 ---
 
-I am Tiansheng Wen, a first-year Ph.D. student at <img class="school-logo" src="{{ '/assets/img/gt-seal.png' | relative_url }}" alt="Georgia Tech logo">Georgia Tech, advised by <a href="https://sites.google.com/view/panli-purdue/home" style="white-space: nowrap;">Prof. Pan Li</a>.
+I am Tiansheng Wen, a first-year Ph.D. student at Georgia Tech, advised by <a href="https://sites.google.com/view/panli-purdue/home" style="white-space: nowrap;">Prof. Pan Li</a>.
 
 My research broadly lies in core machine learning, especially sparsity, with applications to LLMs and LLM-driven agentic learning. Recently, I have been mainly focusing on:
 
@@ -34,9 +34,9 @@ My research broadly lies in core machine learning, especially sparsity, with app
 - Sparse and structured representations for edge-friendly scalable retrieval.
 - Agentic learning for structured data.
 
-Before joining <img class="school-logo" src="{{ '/assets/img/gt-seal.png' | relative_url }}" alt="Georgia Tech logo">Georgia Tech, I spent seven wonderful years at <img class="school-logo" src="{{ '/assets/img/xidian-seal.jpg' | relative_url }}" alt="Xidian University logo">Xidian University for my B.S. and M.S. degrees, where I was fortunate to be supervised by [Prof. Bo Chen](https://web.xidian.edu.cn/bchen/en/index.html).
+Before joining Georgia Tech, I spent seven wonderful years at Xidian University for my B.S. and M.S. degrees, where I was fortunate to be supervised by [Prof. Bo Chen](https://web.xidian.edu.cn/bchen/en/index.html).
 
-I also spent an incredible year at <img class="school-logo" src="{{ '/assets/img/sbu-shield.svg' | relative_url }}" alt="Stony Brook University logo">Stony Brook University working with [Prof. Chenyu You](https://chenyuyou.me/). I am deeply grateful to my close collaborators, [Prof. Stefanie Jegelka](https://people.csail.mit.edu/stefje/) and [Yifei Wang](https://yifeiwang77.com/), for our work on efficient and scalable sparse methods.
+I also spent an incredible year at Stony Brook University working with [Prof. Chenyu You](https://chenyuyou.me/). I am deeply grateful to my close collaborators, [Prof. Stefanie Jegelka](https://people.csail.mit.edu/stefje/) and [Yifei Wang](https://yifeiwang77.com/), for our work on efficient and scalable sparse methods.
 
 I am actively open to research collaboration. Feel free to reach out!
 
